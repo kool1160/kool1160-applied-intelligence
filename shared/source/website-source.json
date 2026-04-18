@@ -1,26 +1,23 @@
 {
-  "project": "Applied Intelligence Website",
+  "projectName": "Applied Intelligence Website",
+  "system": {
+    "name": "Applied Intelligence",
+    "slogan": "Standardize to Optimize",
+    "supportingLine": "Applied Intelligence Framework",
+    "corePrinciple": "One ecosystem. Separate agents. Clear roles.",
+    "description": "Applied Intelligence is the parent ecosystem for specialized manufacturing, continuous improvement, analytics, case study, ROI, corrective action, communication, routing, permissions, and document formatting systems."
+  },
+  "repository": {
+    "name": "kool1160-applied-intelligence",
+    "fullName": "kool1160/kool1160-applied-intelligence",
+    "platform": "GitHub",
+    "url": "https://github.com/kool1160/kool1160-applied-intelligence",
+    "branch": "main",
+    "role": "Central source hub for the Applied Intelligence ecosystem",
+    "purpose": "Acts as the master repository and shared source location for ecosystem project folders, agent definitions, website references, app references, schemas, routing models, handoff models, and roadmap data."
+  },
   "inheritsFrom": "shared/source/applied-intelligence.master.json",
   "projectRegistry": "shared/source/project-registry.json",
-  "target": "website",
-  "purpose": "Provide the website project with a readable source definition for ecosystem pages, navigation, and storytelling.",
-  "pages": [
-    "Home",
-    "Ecosystem Overview",
-    "Agents",
-    "AI-Connect",
-    "Architecture",
-    "Roadmap",
-    "Contact"
-  ],
-  "contentBlocks": [
-    "hero",
-    "ecosystem map",
-    "agent cards",
-    "connective layer explanation",
-    "architecture summary",
-    "brand story"
-  ],
   "sourceLinks": [
     "shared/source/applied-intelligence.master.json",
     "shared/source/project-registry.json",
@@ -29,10 +26,313 @@
     "shared/source/navigation-map.json",
     "shared/source/roadmap.json"
   ],
-  "notes": [
-    "This file is intended to be imported by the website layer.",
-    "The website should pull agent names, roles, principles, and ecosystem language from the shared master source file.",
-    "AI-Connect should be highlighted as the connective layer that ties the ecosystem together.",
-    "The project registry should be used as the shared index for ecosystem-level project references."
-  ]
+  "websiteStructure": {
+    "currentRealPackage": {
+      "version": "V4",
+      "status": "present",
+      "type": "static HTML/CSS/JS",
+      "packageFile": "appliedintelco_v4.zip",
+      "pages": [
+        "index.html",
+        "framework.html",
+        "agents.html",
+        "ai-trace.html",
+        "ai-cis.html",
+        "ai-roi.html",
+        "ai-case.html",
+        "ai-rma.html",
+        "formatter.html",
+        "contact.html"
+      ],
+      "coreFiles": [
+        "style.css",
+        "app.js",
+        "README.txt"
+      ],
+      "assets": {
+        "status": "unclear",
+        "notes": [
+          "V4 package references an assets folder in package structure.",
+          "Current assets situation inside V4 package is unclear.",
+          "Futuristic design reference images exist separately in workspace and are not confirmed as bundled website assets."
+        ]
+      }
+    },
+    "discussedButNotPresent": {
+      "version": "V5",
+      "status": "discussed but not present",
+      "notes": [
+        "V5 was discussed as a follow-up fix pass.",
+        "Do not treat V5 as a real source package unless recreated."
+      ]
+    },
+    "pendingMerge": [
+      {
+        "id": "ai-connect",
+        "name": "AI-Connect",
+        "status": "required new top-tier addition pending merge into website",
+        "notes": [
+          "AI-Connect is defined in source files but not yet merged into the current real website package.",
+          "AI-Connect should be added as a first-class ecosystem entry, not buried as a secondary utility."
+        ]
+      }
+    ],
+    "deploymentModel": {
+      "type": "static deployment",
+      "knownHostContext": [
+        "Cloudflare Workers & Pages direct upload",
+        "Custom domains used in conversation included appliedintelco.com and www.appliedintelco.com"
+      ]
+    }
+  },
+  "ecosystemRole": {
+    "websiteRole": "public-facing framework shell",
+    "presents": [
+      "the parent Applied Intelligence ecosystem",
+      "the relationship between top-tier ecosystem systems",
+      "the public framework map and structure of the umbrella"
+    ],
+    "isNot": [
+      "the full application",
+      "the full installable app shell",
+      "the master source of truth for ecosystem identity"
+    ],
+    "alignmentRule": "This website should stay tied to the master Applied Intelligence source.",
+    "publicFacingLanguage": {
+      "brand": "Applied Intelligence",
+      "slogan": "Standardize to Optimize",
+      "supportingLine": "Applied Intelligence Framework",
+      "corePrinciple": "One ecosystem. Separate agents. Clear roles."
+    }
+  },
+  "websiteEcosystemEntries": [
+    {
+      "id": "ai-connect",
+      "name": "AI-Connect",
+      "tier": "top-tier",
+      "status": "required pending merge",
+      "type": "communication_routing_permissions_layer",
+      "tagline": "AI-Connect ties the ecosystem together through communication, routing, notification, permissions, escalation, handoff, and coordination.",
+      "purpose": "Operate as the connective operating layer inside the Applied Intelligence ecosystem.",
+      "identity": "AI-Connect is the communication, routing, notification, and permission layer. It connects people, departments, reports, alerts, meetings, permissions, workflows, and agent handoffs so nothing important gets lost between people, departments, or decisions.",
+      "owns": [
+        "report routing",
+        "user notifications",
+        "escalation routing",
+        "role-based communication",
+        "permission control",
+        "meeting notifications",
+        "cross-department chat tied to work",
+        "ownership visibility",
+        "action routing",
+        "controlled user access",
+        "configurable communication pathways",
+        "system-wide coordination across the Applied Intelligence ecosystem"
+      ],
+      "validCommands": [
+        "Run Connect",
+        "Run Connect Route",
+        "Run Connect Notify",
+        "Run Connect Alert",
+        "Run Connect Chat",
+        "Run Connect Permissions",
+        "Run Connect Access",
+        "Run Connect Meeting",
+        "Run Connect Escalation",
+        "Run Connect Handoff",
+        "Run Connect Broadcast",
+        "Run Connect Department View",
+        "Run Connect User View",
+        "Final"
+      ],
+      "boundaries": [
+        "AI-Connect does not replace AI-Trace, AI-CIS, AI-Case, AI-ROI, or AI-RMA.",
+        "AI-Connect does not own root cause analysis.",
+        "AI-Connect does not own corrective action writing.",
+        "AI-Connect does not own continuous improvement logic.",
+        "AI-Connect does not own ROI/business case generation.",
+        "AI-Connect does not own case study storytelling.",
+        "AI-Connect does not own failure analysis ownership.",
+        "AI-Connect does not own formatting ownership."
+      ],
+      "websiteStatus": {
+        "currentWebsitePresence": "not yet merged into current V4 website package",
+        "priority": "major new feature under the umbrella",
+        "mergeExpectation": "should be added as a top-tier ecosystem node on website and framework map"
+      }
+    },
+    {
+      "id": "ai-trace",
+      "name": "AI-Trace",
+      "tier": "top-tier",
+      "status": "present in current website files",
+      "type": "analytics_visibility",
+      "tagline": "AI-Trace exposes repeat problems, hidden cost, quality risk, and lost hours so recurring issues stop being patched and start being fixed.",
+      "roleRelationship": "Core visibility and analytics system under the parent ecosystem."
+    },
+    {
+      "id": "ai-cis",
+      "name": "AI-CIS",
+      "tier": "top-tier",
+      "status": "present in current website files",
+      "type": "continuous_improvement",
+      "tagline": "AI-CIS captures process breakdowns, protects flow, and drives corrective action before repeat issues become normal.",
+      "roleRelationship": "Core improvement engine under the parent ecosystem."
+    },
+    {
+      "id": "ai-case",
+      "name": "AI-Case",
+      "tier": "top-tier",
+      "status": "present in current website files",
+      "type": "case_study_storytelling",
+      "tagline": "AI-Case turns real improvements, technical problem-solving, and process wins into clear case studies that show what was done, why it mattered, and what changed.",
+      "roleRelationship": "Storytelling and portfolio lane under the parent ecosystem."
+    },
+    {
+      "id": "ai-roi",
+      "name": "AI-ROI",
+      "tier": "top-tier",
+      "status": "present in current website files",
+      "type": "business_justification",
+      "tagline": "AI-ROI turns validated improvements and equipment opportunities into clear financial justification, showing where capacity, labor, and value can be gained.",
+      "roleRelationship": "Financial and business-justification lane under the parent ecosystem."
+    },
+    {
+      "id": "ai-rma",
+      "name": "AI-RMA",
+      "tier": "top-tier",
+      "status": "present in current website files",
+      "type": "return_corrective_action",
+      "tagline": "AI-RMA traces failures back to the source, contains risk, and drives permanent correction instead of repeat damage.",
+      "roleRelationship": "Containment and corrective-action lane under the parent ecosystem."
+    },
+    {
+      "id": "document-formatter",
+      "name": "Document Formatter",
+      "tier": "visible-but-undecided",
+      "status": "present in current website files",
+      "type": "support_utility",
+      "tagline": "The Document Formatter turns finished outputs into clean, branded documents ready for review, print, or portfolio use.",
+      "roleRelationship": "Formatting and presentation utility under the ecosystem, with public visibility still somewhat undecided."
+    },
+    {
+      "id": "ai-quote",
+      "name": "AI-Quote",
+      "tier": "planned_or_unknown",
+      "status": "UNKNOWN in current real website files",
+      "notes": [
+        "AI-Quote appeared in earlier planning discussions.",
+        "AI-Quote is not confirmed as truly present in the current real V4 website package pages.",
+        "Do not invent website details for AI-Quote until a real current website source or agent source is present."
+      ]
+    }
+  ],
+  "siteRelationships": {
+    "parentSystem": "Applied Intelligence",
+    "relationshipModel": [
+      {
+        "from": "Applied Intelligence",
+        "to": "AI-Connect",
+        "relationship": "top-tier connective system under umbrella"
+      },
+      {
+        "from": "Applied Intelligence",
+        "to": "AI-Trace",
+        "relationship": "top-tier visibility and analytics system"
+      },
+      {
+        "from": "Applied Intelligence",
+        "to": "AI-CIS",
+        "relationship": "top-tier continuous improvement engine"
+      },
+      {
+        "from": "Applied Intelligence",
+        "to": "AI-Case",
+        "relationship": "top-tier case study and storytelling system"
+      },
+      {
+        "from": "Applied Intelligence",
+        "to": "AI-ROI",
+        "relationship": "top-tier ROI and business justification system"
+      },
+      {
+        "from": "Applied Intelligence",
+        "to": "AI-RMA",
+        "relationship": "top-tier return and corrective-action system"
+      },
+      {
+        "from": "Applied Intelligence",
+        "to": "Document Formatter",
+        "relationship": "support utility with current public visibility but undecided long-term placement"
+      }
+    ],
+    "websitePresentationRule": "The website should present the ecosystem as a connected framework under one parent system rather than as isolated pages."
+  },
+  "appAndPwaContext": {
+    "status": "separate from current website package",
+    "role": "installable app shell / PWA starter pack",
+    "files": [
+      "manifest.json",
+      "sw.js",
+      "install.js",
+      "head-snippet.html",
+      "body-snippet.html",
+      "V8-STRUCTURE.md"
+    ],
+    "notes": [
+      "The app/PWA starter pack is separate from the current real website package.",
+      "The current app/PWA paths assume /applied-intelligence-app/ pathing.",
+      "Website and app should stay aligned to master Applied Intelligence source even if they remain separate deliverables."
+    ]
+  },
+  "openItems": [
+    {
+      "item": "V5 missing",
+      "status": "open",
+      "details": "V5 was discussed but is not present as a real source package."
+    },
+    {
+      "item": "AI-Connect not yet merged into website package",
+      "status": "open",
+      "details": "AI-Connect is defined in source material and should be merged as a top-tier website ecosystem entry."
+    },
+    {
+      "item": "Formatter visibility still somewhat undecided",
+      "status": "open",
+      "details": "Document Formatter is currently present publicly but may later move behind the scenes."
+    },
+    {
+      "item": "contact page placeholder",
+      "status": "open",
+      "details": "Current contact page is placeholder-based and uses a suggested contact address rather than final intake flow."
+    },
+    {
+      "item": "app/PWA still separate",
+      "status": "open",
+      "details": "The installable app shell and PWA starter files are separate from the current real website package."
+    },
+    {
+      "item": "current assets situation unclear",
+      "status": "open",
+      "details": "Current V4 package references assets context, but asset contents in the real website package remain unclear."
+    }
+  ],
+  "syncRules": {
+    "ruleSet": [
+      "The website source should inherit its core ecosystem logic from the master Applied Intelligence source.",
+      "The website should not maintain conflicting agent definitions.",
+      "Public website structure and ecosystem presentation can be website-specific, but core agent identity should stay aligned with the master source.",
+      "AI-Connect should be treated as a first-class ecosystem feature."
+    ],
+    "corePrinciple": "The website presents the ecosystem, but the master source defines it."
+  },
+  "websitePublicFacingLanguage": {
+    "brand": "Applied Intelligence",
+    "headlineLanguage": [
+      "Applied Intelligence",
+      "Standardize to Optimize",
+      "Applied Intelligence Framework"
+    ],
+    "corePrinciple": "One ecosystem. Separate agents. Clear roles."
+  }
 }
