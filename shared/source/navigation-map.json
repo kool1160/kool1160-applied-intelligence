@@ -1,0 +1,28 @@
+{
+  "website": {
+    "primary": [
+      "Home",
+      "Ecosystem",
+      "Agents",
+      "AI-Connect",
+      "Architecture",
+      "Roadmap",
+      "Contact"
+    ]
+  },
+  "mobileApp": {
+    "primary": [
+      "Home",
+      "Ecosystem",
+      "Agents",
+      "Connect",
+      "Dashboards",
+      "Reports",
+      "Settings"
+    ]
+  },
+  "notes": [
+    "Navigation labels can differ slightly between website and app, but should still map back to the same ecosystem source.",
+    "AI-Connect should appear as a first-class feature in both delivery layers."
+  ]
+}
