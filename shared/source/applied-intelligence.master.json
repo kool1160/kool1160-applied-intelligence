@@ -9,13 +9,23 @@
     "description": "Applied Intelligence is the parent ecosystem for specialized manufacturing, quality, reporting, communication, and business-value agents.",
     "corePrinciple": "One ecosystem. Separate agents. Clear roles."
   },
+  "repository": {
+    "name": "kool1160-applied-intelligence",
+    "fullName": "kool1160/kool1160-applied-intelligence",
+    "platform": "GitHub",
+    "url": "https://github.com/kool1160/kool1160-applied-intelligence",
+    "branch": "main",
+    "role": "Central source hub for the Applied Intelligence ecosystem",
+    "purpose": "Acts as the master repository and shared source location for ecosystem project folders, agent definitions, website references, app references, schemas, routing models, and roadmap data."
+  },
   "ecosystem": {
     "sharedSourceStrategy": "The website and app should both read from shared source files in this repository so ecosystem definitions remain synchronized.",
     "connectiveLayer": "AI-Connect",
     "deliveryLayers": [
       "website",
       "mobile-app"
-    ]
+    ],
+    "projectFoldersUseRepoAs": "central-database-and-source-hub"
   },
   "agents": [
     {
