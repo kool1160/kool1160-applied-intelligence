@@ -1,0 +1,49 @@
+{
+  "project": "Applied Intelligence",
+  "roadmap": [
+    {
+      "phase": "Phase 1",
+      "title": "Core Ecosystem Foundation",
+      "focus": [
+        "master source files",
+        "agent shells",
+        "shared schemas",
+        "website and app starter structures"
+      ],
+      "status": "in-progress"
+    },
+    {
+      "phase": "Phase 2",
+      "title": "Connected Delivery Layer Buildout",
+      "focus": [
+        "website rendering from shared source",
+        "mobile app rendering from shared source",
+        "AI-Connect routing and permissions surfaces",
+        "dashboard and report UI structure"
+      ],
+      "status": "planned"
+    },
+    {
+      "phase": "Phase 3",
+      "title": "Workflow and Agent Execution Expansion",
+      "focus": [
+        "agent command integration",
+        "handoff workflows",
+        "role-based views",
+        "meeting prep and broadcast functions"
+      ],
+      "status": "planned"
+    },
+    {
+      "phase": "Phase 4",
+      "title": "Operational Scale and Polish",
+      "focus": [
+        "production-grade UX",
+        "cross-department visibility",
+        "executive reporting",
+        "ecosystem refinement and scaling"
+      ],
+      "status": "planned"
+    }
+  ]
+}
