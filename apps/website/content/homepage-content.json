@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "headline": "Applied Intelligence",
+    "subheadline": "Standardize to Optimize",
+    "supportingText": "A connected ecosystem of specialized agents built to improve reporting, traceability, communication, quoting, corrective flow, and business-value visibility.",
+    "ctaPrimary": "Explore the Ecosystem",
+    "ctaSecondary": "View AI-Connect"
+  },
+  "featured": {
+    "title": "AI-Connect",
+    "description": "The connective operating layer that ties people, departments, reports, meetings, permissions, and handoffs together so nothing important gets lost."
+  },
+  "sections": [
+    {
+      "id": "ecosystem-intro",
+      "title": "One ecosystem. Separate agents. Clear roles.",
+      "body": "Applied Intelligence is designed as a family of specialist agents connected through shared source files and coordinated through AI-Connect."
+    },
+    {
+      "id": "agent-cards",
+      "title": "Specialized agents, built to stay in role.",
+      "body": "Each agent owns a specific function so the ecosystem stays structured, scalable, and clear."
+    }
+  ]
+}
