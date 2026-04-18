@@ -1,6 +1,7 @@
 {
   "project": "Applied Intelligence App",
   "inheritsFrom": "shared/source/applied-intelligence.master.json",
+  "projectRegistry": "shared/source/project-registry.json",
   "target": "mobile-app",
   "purpose": "Provide the app project with a readable source definition for the full Applied Intelligence ecosystem.",
   "modules": [
@@ -22,9 +23,20 @@
     "Reports",
     "Settings"
   ],
+  "sourceLinks": [
+    "shared/source/applied-intelligence.master.json",
+    "shared/source/project-registry.json",
+    "shared/source/agent-registry.json",
+    "shared/source/ecosystem-overview.json",
+    "shared/source/roles-and-permissions.json",
+    "shared/source/connect-routes.json",
+    "shared/source/handoff-model.json",
+    "shared/source/roadmap.json"
+  ],
   "notes": [
     "This file is intended to be imported by the app layer.",
     "Core ecosystem definitions should still originate from the shared master source file.",
-    "AI-Connect should be treated as the connective user workflow layer inside the app experience."
+    "AI-Connect should be treated as the connective user workflow layer inside the app experience.",
+    "The project registry should be used as the shared index for ecosystem-level project references."
   ]
 }
