@@ -1,0 +1,46 @@
+{
+  "routes": [
+    {
+      "id": "incident-to-owner",
+      "trigger": "new incident logged",
+      "from": "submission layer",
+      "to": ["department lead", "supervisor"],
+      "purpose": "Ensure new issues are seen by accountable owners quickly."
+    },
+    {
+      "id": "trace-to-cis",
+      "trigger": "recurring pattern threshold reached",
+      "from": "ai-trace",
+      "to": ["ai-cis"],
+      "purpose": "Escalate recurring patterns into improvement review."
+    },
+    {
+      "id": "cis-to-case",
+      "trigger": "case study candidate marked yes",
+      "from": "ai-cis",
+      "to": ["ai-case"],
+      "purpose": "Hand off validated improvements for storytelling."
+    },
+    {
+      "id": "cis-to-roi",
+      "trigger": "value justification requested",
+      "from": "ai-cis",
+      "to": ["ai-roi"],
+      "purpose": "Pass validated improvement content into ROI analysis."
+    },
+    {
+      "id": "meeting-prep-route",
+      "trigger": "meeting scheduled",
+      "from": "ai-connect",
+      "to": ["required attendees"],
+      "purpose": "Prepare the right people with the right context before meetings."
+    },
+    {
+      "id": "executive-broadcast",
+      "trigger": "executive notice issued",
+      "from": "president",
+      "to": ["all permitted users"],
+      "purpose": "Allow high-level communications to reach the right audience."
+    }
+  ]
+}
