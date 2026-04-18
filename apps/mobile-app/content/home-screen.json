@@ -1,0 +1,35 @@
+{
+  "header": {
+    "title": "Applied Intelligence",
+    "tagline": "Standardize to Optimize"
+  },
+  "featuredCard": {
+    "title": "AI-Connect",
+    "subtitle": "Communication, routing, permissions, and handoffs",
+    "description": "Keep people, departments, and decisions connected through one shared operating layer."
+  },
+  "quickAccess": [
+    "Agents",
+    "Connect",
+    "Dashboards",
+    "Reports",
+    "Notifications"
+  ],
+  "homeModules": [
+    {
+      "id": "ecosystem-overview",
+      "title": "Ecosystem Overview",
+      "description": "See the full Applied Intelligence family in one place."
+    },
+    {
+      "id": "featured-ai-connect",
+      "title": "AI-Connect",
+      "description": "Route the right information to the right people before action is needed."
+    },
+    {
+      "id": "agent-access",
+      "title": "Agent Access",
+      "description": "Jump into the specialist agents from one shared interface."
+    }
+  ]
+}
