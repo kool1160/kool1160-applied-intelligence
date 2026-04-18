@@ -1,0 +1,27 @@
+{
+  "appName": "Applied Intelligence",
+  "displayName": "Applied Intelligence",
+  "tagline": "Standardize to Optimize",
+  "homeModules": [
+    "ecosystem-overview",
+    "featured-ai-connect",
+    "agent-access",
+    "dashboards",
+    "reports",
+    "notifications"
+  ],
+  "primaryTabs": [
+    "Home",
+    "Agents",
+    "Connect",
+    "Dashboards",
+    "Reports",
+    "Settings"
+  ],
+  "dataSources": [
+    "../../shared/source/applied-intelligence.master.json",
+    "../../shared/source/agent-registry.json",
+    "../../shared/source/ecosystem-overview.json",
+    "../../shared/source/roles-and-permissions.json"
+  ]
+}
