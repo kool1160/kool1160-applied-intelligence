@@ -1,0 +1,68 @@
+{
+  "title": "Applied Intelligence Ecosystem",
+  "subtitle": "One ecosystem. Separate agents. Clear roles.",
+  "description": "Applied Intelligence is a connected family of specialized agents for continuous improvement, traceability, communication, quoting, corrective flow, case storytelling, and business justification.",
+  "featuredLayer": {
+    "name": "AI-Connect",
+    "role": "The connective operating layer that ties departments, people, reports, meetings, permissions, and handoffs together.",
+    "whyItMatters": "AI-Connect helps ensure that nothing important gets lost between people, departments, or decisions."
+  },
+  "cards": [
+    {
+      "id": "ai-cis",
+      "name": "AI-CIS",
+      "tagline": "Continuous improvement built for real shop-floor issues.",
+      "role": "Incident capture, LIRs, equipment/process issue workflows.",
+      "status": "active",
+      "principle": "AI-CIS finds the improvement."
+    },
+    {
+      "id": "ai-case",
+      "name": "AI-Case",
+      "tagline": "Turn validated improvements into clean case studies.",
+      "role": "Portfolio-ready storytelling and structured problem-action-result narratives.",
+      "status": "planned",
+      "principle": "AI-Case tells the story."
+    },
+    {
+      "id": "ai-roi",
+      "name": "AI-ROI",
+      "tagline": "Show the value clearly.",
+      "role": "ROI, payback, and business case justification.",
+      "status": "active",
+      "principle": "AI-ROI justifies the value."
+    },
+    {
+      "id": "ai-quote",
+      "name": "AI-Quote",
+      "tagline": "Lean quoting with weld and grind awareness.",
+      "role": "Estimating, labor framing, and flow-aware pricing.",
+      "status": "planned",
+      "principle": "AI-Quote prices the work clearly."
+    },
+    {
+      "id": "ai-rma",
+      "name": "AI-RMA",
+      "tagline": "Return and corrective flow with ownership.",
+      "role": "Returns, corrective tracking, and closure workflows.",
+      "status": "planned",
+      "principle": "AI-RMA closes the loop."
+    },
+    {
+      "id": "ai-trace",
+      "name": "AI-Trace",
+      "tagline": "Expose patterns before they get ignored.",
+      "role": "Trace logs, trends, dashboard visibility, and escalation signals.",
+      "status": "active",
+      "principle": "AI-Trace shows the picture clearly."
+    },
+    {
+      "id": "ai-connect",
+      "name": "AI-Connect",
+      "tagline": "The connective layer for people, departments, and action.",
+      "role": "Communication, routing, notifications, meetings, permissions, and handoffs.",
+      "status": "active",
+      "principle": "Nothing important gets lost between people, departments, or decisions."
+    }
+  ]
+}
