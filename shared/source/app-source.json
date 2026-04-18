@@ -1,0 +1,30 @@
+{
+  "project": "Applied Intelligence App",
+  "inheritsFrom": "shared/source/applied-intelligence.master.json",
+  "target": "mobile-app",
+  "purpose": "Provide the app project with a readable source definition for the full Applied Intelligence ecosystem.",
+  "modules": [
+    "dashboard",
+    "agents",
+    "routing",
+    "notifications",
+    "chat",
+    "permissions",
+    "meetings",
+    "handoffs"
+  ],
+  "uiSections": [
+    "Home",
+    "Ecosystem",
+    "Agents",
+    "AI-Connect",
+    "Dashboards",
+    "Reports",
+    "Settings"
+  ],
+  "notes": [
+    "This file is intended to be imported by the app layer.",
+    "Core ecosystem definitions should still originate from the shared master source file.",
+    "AI-Connect should be treated as the connective user workflow layer inside the app experience."
+  ]
+}
