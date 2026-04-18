@@ -1,0 +1,28 @@
+{
+  "handoffs": [
+    {
+      "from": "ai-cis",
+      "to": "ai-case",
+      "condition": "case study candidate equals yes",
+      "handoffPayload": ["title", "problem summary", "action summary", "results", "evidence references"]
+    },
+    {
+      "from": "ai-cis",
+      "to": "ai-roi",
+      "condition": "business value justification requested",
+      "handoffPayload": ["validated improvement summary", "time savings", "cost impact", "constraints", "assumptions"]
+    },
+    {
+      "from": "ai-trace",
+      "to": "ai-cis",
+      "condition": "pattern threshold met",
+      "handoffPayload": ["pattern summary", "frequency", "locations", "departments", "severity signals"]
+    },
+    {
+      "from": "ai-connect",
+      "to": "human owners",
+      "condition": "notification, routing, meeting, or escalation required",
+      "handoffPayload": ["owner", "priority", "summary", "required action", "deadline"]
+    }
+  ]
+}
