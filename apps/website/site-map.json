@@ -1,0 +1,40 @@
+{
+  "siteName": "Applied Intelligence",
+  "pages": [
+    {
+      "slug": "/",
+      "title": "Home",
+      "sections": ["hero", "ecosystem-intro", "featured-connective-layer", "agent-cards", "cta"]
+    },
+    {
+      "slug": "/ecosystem",
+      "title": "Ecosystem",
+      "sections": ["ecosystem-overview", "agent-grid", "shared-principles"]
+    },
+    {
+      "slug": "/agents",
+      "title": "Agents",
+      "sections": ["agent-list", "agent-boundaries", "agent-principles"]
+    },
+    {
+      "slug": "/ai-connect",
+      "title": "AI-Connect",
+      "sections": ["connect-purpose", "routing", "permissions", "meetings", "handoffs"]
+    },
+    {
+      "slug": "/architecture",
+      "title": "Architecture",
+      "sections": ["system-model", "shared-source-layer", "delivery-layers", "future-roadmap"]
+    },
+    {
+      "slug": "/roadmap",
+      "title": "Roadmap",
+      "sections": ["phase-1", "phase-2", "phase-3"]
+    },
+    {
+      "slug": "/contact",
+      "title": "Contact",
+      "sections": ["contact-intro", "contact-form"]
+    }
+  ]
+}
