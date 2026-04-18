@@ -1,0 +1,43 @@
+{
+  "registry": {
+    "name": "Applied Intelligence Project Registry",
+    "version": "1.0.0",
+    "purpose": "Central index of Applied Intelligence ecosystem projects, shared references, and source relationships.",
+    "repository": "kool1160/kool1160-applied-intelligence"
+  },
+  "projects": [
+    {
+      "id": "applied-intelligence-master",
+      "name": "Applied Intelligence",
+      "type": "ecosystem-master",
+      "status": "active",
+      "version": "1.0.0",
+      "repo": "kool1160/kool1160-applied-intelligence",
+      "sourceFile": "shared/source/applied-intelligence.master.json",
+      "role": "Parent ecosystem and central source hub",
+      "notes": "Acts as the master database/reference point for agents, schemas, routing, roadmap, website references, and app references."
+    },
+    {
+      "id": "applied-intelligence-website",
+      "name": "Applied Intelligence Website",
+      "type": "website-project",
+      "status": "active",
+      "version": "v5-reference",
+      "repo": "kool1160/kool1160-applied-intelligence",
+      "sourceFile": "shared/source/website-source.json",
+      "role": "Website delivery layer for ecosystem presentation and storytelling",
+      "notes": "Should reference the master source file and project registry so the site stays tied to the ecosystem source of truth."
+    },
+    {
+      "id": "applied-intelligence-app",
+      "name": "Applied Intelligence App",
+      "type": "app-project",
+      "status": "active",
+      "version": "1.0.0-shell",
+      "repo": "kool1160/kool1160-applied-intelligence",
+      "sourceFile": "shared/source/app-source.json",
+      "role": "App delivery layer for connected workflows, dashboards, reports, and AI-Connect functions",
+      "notes": "Should reference the master source file and project registry so the app stays tied to the ecosystem source of truth."
+    }
+  ]
+}
