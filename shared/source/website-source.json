@@ -1,0 +1,28 @@
+{
+  "project": "Applied Intelligence Website",
+  "inheritsFrom": "shared/source/applied-intelligence.master.json",
+  "target": "website",
+  "purpose": "Provide the website project with a readable source definition for ecosystem pages, navigation, and storytelling.",
+  "pages": [
+    "Home",
+    "Ecosystem Overview",
+    "Agents",
+    "AI-Connect",
+    "Architecture",
+    "Roadmap",
+    "Contact"
+  ],
+  "contentBlocks": [
+    "hero",
+    "ecosystem map",
+    "agent cards",
+    "connective layer explanation",
+    "architecture summary",
+    "brand story"
+  ],
+  "notes": [
+    "This file is intended to be imported by the website layer.",
+    "The website should pull agent names, roles, principles, and ecosystem language from the shared master source file.",
+    "AI-Connect should be highlighted as the connective layer that ties the ecosystem together."
+  ]
+}
