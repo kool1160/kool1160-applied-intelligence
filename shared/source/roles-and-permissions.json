@@ -1,0 +1,49 @@
+{
+  "roles": [
+    {
+      "id": "standard-user",
+      "name": "Standard User",
+      "scope": ["personal", "department"],
+      "canView": ["assigned reports", "department chat", "meeting notices", "dashboard summaries"],
+      "canEdit": ["own submissions", "own profile"],
+      "canRoute": ["handoff requests"],
+      "canBroadcast": false
+    },
+    {
+      "id": "lead",
+      "name": "Lead",
+      "scope": ["department", "cross-functional"],
+      "canView": ["department reports", "department chat", "meeting prep", "department dashboards"],
+      "canEdit": ["department routing", "handoff assignments"],
+      "canRoute": ["department alerts", "meeting prep", "handoffs"],
+      "canBroadcast": false
+    },
+    {
+      "id": "supervisor",
+      "name": "Supervisor",
+      "scope": ["department", "multi-department"],
+      "canView": ["department reports", "cross-functional communication", "meeting packets", "dashboard views"],
+      "canEdit": ["routing decisions", "department access", "meeting ownership"],
+      "canRoute": ["alerts", "meetings", "escalations", "handoffs"],
+      "canBroadcast": true
+    },
+    {
+      "id": "manager",
+      "name": "Manager",
+      "scope": ["multi-department", "operations"],
+      "canView": ["executive summaries", "department views", "cross-functional reports", "dashboard trends"],
+      "canEdit": ["routing rules", "permissions by role", "broadcast controls"],
+      "canRoute": ["cross-functional escalations", "executive prep", "broadcast notices"],
+      "canBroadcast": true
+    },
+    {
+      "id": "president",
+      "name": "President / Executive",
+      "scope": ["enterprise-wide"],
+      "canView": ["all dashboards", "all reports", "all meeting prep", "all broadcast channels"],
+      "canEdit": ["global permissions", "broadcast access", "executive routing"],
+      "canRoute": ["global notices", "executive directives", "high-priority escalations"],
+      "canBroadcast": true
+    }
+  ]
+}
