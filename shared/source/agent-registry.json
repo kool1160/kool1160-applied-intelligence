@@ -1,0 +1,158 @@
+{
+  "registryVersion": "1.0.0",
+  "ecosystem": "Applied Intelligence",
+  "agents": [
+    {
+      "id": "ai-cis",
+      "name": "AI-CIS",
+      "category": "continuous-improvement",
+      "status": "active",
+      "tagline": "Structured continuous improvement for real shop-floor issues.",
+      "role": "Continuous improvement only",
+      "owns": [
+        "incident capture",
+        "LIR generation",
+        "equipment issue reporting",
+        "process issue reporting",
+        "control-focused improvement workflows"
+      ],
+      "doesNotOwn": [
+        "ROI",
+        "business case justification",
+        "quoting",
+        "case study writing"
+      ],
+      "principle": "AI-CIS finds the improvement.",
+      "handoffTargets": ["ai-case", "ai-roi"]
+    },
+    {
+      "id": "ai-case",
+      "name": "AI-Case",
+      "category": "storytelling",
+      "status": "planned",
+      "tagline": "Portfolio-ready storytelling for validated improvements.",
+      "role": "Case study and portfolio storytelling",
+      "owns": [
+        "case study writing",
+        "portfolio formatting",
+        "problem-action-result narratives"
+      ],
+      "doesNotOwn": [
+        "incident capture",
+        "ROI calculations",
+        "quoting"
+      ],
+      "principle": "AI-Case tells the story.",
+      "handoffTargets": ["ai-roi"]
+    },
+    {
+      "id": "ai-roi",
+      "name": "AI-ROI",
+      "category": "business-value",
+      "status": "active",
+      "tagline": "Business justification and payback clarity.",
+      "role": "ROI, payback, and business justification",
+      "owns": [
+        "ROI analysis",
+        "payback analysis",
+        "business case writing",
+        "financial justification"
+      ],
+      "doesNotOwn": [
+        "continuous improvement capture",
+        "case study storytelling",
+        "estimating"
+      ],
+      "principle": "AI-ROI justifies the value.",
+      "handoffTargets": []
+    },
+    {
+      "id": "ai-quote",
+      "name": "AI-Quote",
+      "category": "estimating",
+      "status": "planned",
+      "tagline": "Lean estimating with weld, grind, and flow awareness.",
+      "role": "Quoting and estimating",
+      "owns": [
+        "quote logic",
+        "estimating",
+        "weld and grind labor modeling",
+        "flow-aware quoting"
+      ],
+      "doesNotOwn": [
+        "ROI justification",
+        "continuous improvement reporting",
+        "returns management"
+      ],
+      "principle": "AI-Quote prices the work clearly.",
+      "handoffTargets": ["ai-roi"]
+    },
+    {
+      "id": "ai-rma",
+      "name": "AI-RMA",
+      "category": "corrective-system",
+      "status": "planned",
+      "tagline": "Structured return and corrective ownership flow.",
+      "role": "Return and corrective flow system",
+      "owns": [
+        "return workflows",
+        "corrective ownership tracking",
+        "closure flow"
+      ],
+      "doesNotOwn": [
+        "quoting",
+        "ROI",
+        "trace dashboards"
+      ],
+      "principle": "AI-RMA closes the loop.",
+      "handoffTargets": ["ai-connect", "ai-trace"]
+    },
+    {
+      "id": "ai-trace",
+      "name": "AI-Trace",
+      "category": "traceability",
+      "status": "active",
+      "tagline": "Log patterns, expose signals, and show the picture clearly.",
+      "role": "Trace logging, summaries, patterns, escalations, and dashboards",
+      "owns": [
+        "trace logs",
+        "pattern summaries",
+        "trend visibility",
+        "dashboard outputs",
+        "escalation signals"
+      ],
+      "doesNotOwn": [
+        "corrective ownership",
+        "ROI",
+        "incident correction"
+      ],
+      "principle": "AI-Trace shows the picture clearly.",
+      "handoffTargets": ["ai-cis", "ai-connect"]
+    },
+    {
+      "id": "ai-connect",
+      "name": "AI-Connect",
+      "category": "connective-layer",
+      "status": "active",
+      "tagline": "Connect people, departments, and action before things get lost.",
+      "role": "Communication, routing, notifications, permissions, meetings, escalation, handoff, and broadcast layer",
+      "owns": [
+        "routing",
+        "notifications",
+        "permissions",
+        "meeting preparation",
+        "handoffs",
+        "cross-functional communication",
+        "broadcasts"
+      ],
+      "doesNotOwn": [
+        "specialist analysis",
+        "ROI",
+        "corrective root cause generation",
+        "estimating"
+      ],
+      "principle": "Nothing important gets lost between people, departments, or decisions.",
+      "handoffTargets": ["ai-cis", "ai-case", "ai-roi", "ai-quote", "ai-rma", "ai-trace"]
+    }
+  ]
+}
