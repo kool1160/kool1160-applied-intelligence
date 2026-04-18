@@ -1,28 +1,17 @@
 {
-  "project": "Applied Intelligence App",
+  "projectName": "Applied Intelligence App",
+  "appId": "applied-intelligence-app",
+  "version": {
+    "name": "V8",
+    "displayTitle": "Applied Intelligence V8",
+    "previousKnownLabel": "V7 responsive build",
+    "evidence": {
+      "indexTitleUpdatedInCommit": "Add files via upload",
+      "indexTitleLineChangedTo": "Applied Intelligence V8"
+    }
+  },
   "inheritsFrom": "shared/source/applied-intelligence.master.json",
   "projectRegistry": "shared/source/project-registry.json",
-  "target": "mobile-app",
-  "purpose": "Provide the app project with a readable source definition for the full Applied Intelligence ecosystem.",
-  "modules": [
-    "dashboard",
-    "agents",
-    "routing",
-    "notifications",
-    "chat",
-    "permissions",
-    "meetings",
-    "handoffs"
-  ],
-  "uiSections": [
-    "Home",
-    "Ecosystem",
-    "Agents",
-    "AI-Connect",
-    "Dashboards",
-    "Reports",
-    "Settings"
-  ],
   "sourceLinks": [
     "shared/source/applied-intelligence.master.json",
     "shared/source/project-registry.json",
@@ -33,10 +22,228 @@
     "shared/source/handoff-model.json",
     "shared/source/roadmap.json"
   ],
-  "notes": [
-    "This file is intended to be imported by the app layer.",
-    "Core ecosystem definitions should still originate from the shared master source file.",
-    "AI-Connect should be treated as the connective user workflow layer inside the app experience.",
-    "The project registry should be used as the shared index for ecosystem-level project references."
-  ]
+  "repository": {
+    "currentAppRepo": {
+      "fullName": "kool1160/applied-intelligence-app",
+      "visibility": "public",
+      "defaultBranch": "main"
+    },
+    "masterRepo": {
+      "fullName": "kool1160/kool1160-applied-intelligence",
+      "url": "https://github.com/kool1160/kool1160-applied-intelligence"
+    }
+  },
+  "appFormat": {
+    "type": "static-web-app",
+    "entryFile": "index.html",
+    "configFiles": [
+      "manifest.json",
+      "sw.js",
+      "install.js"
+    ],
+    "deployment": {
+      "type": "GitHub Pages",
+      "status": "LIVE_OR_PREVIOUSLY_DEPLOYED",
+      "exactPagesConfigFile": "UNKNOWN"
+    }
+  },
+  "currentFiles": {
+    "root": [
+      "README.md",
+      "index.html",
+      "install.js",
+      "manifest.json",
+      "sw.js"
+    ],
+    "assets": {
+      "icons": [
+        "apple-touch-icon.png",
+        "favicon-16.png",
+        "favicon-32.png",
+        "icon-192.png",
+        "icon-512.png"
+      ]
+    }
+  },
+  "currentScreensAndUI": {
+    "knownScreens": [
+      "home",
+      "trace",
+      "dashboard",
+      "more",
+      "UNKNOWN_FIFTH_BOTTOM_NAV_SCREEN"
+    ],
+    "traceSubPanes": [
+      "single",
+      "batch",
+      "handoff"
+    ],
+    "knownHomeBlocks": [
+      "Priority View",
+      "Recent Activity"
+    ],
+    "knownTraceFeatures": [
+      "Single trace entry",
+      "Batch import",
+      "AI-CIS handoff builder",
+      "Export trace JSON",
+      "Export management summary text",
+      "Export pattern summary text"
+    ],
+    "knownDataOutputs": [
+      "ai_trace_data_v7.json",
+      "ai_trace_summary_v7.txt",
+      "ai_trace_patterns_v7.txt"
+    ]
+  },
+  "ecosystemPurpose": {
+    "umbrella": "Applied Intelligence",
+    "role": "This app is the front-end shell and working interface for the Applied Intelligence ecosystem, currently centered around AI-Trace with visible handoff into AI-CIS and dashboard-style management views.",
+    "currentFit": [
+      "AI-Trace capture",
+      "Pattern surfacing",
+      "Management summary view",
+      "AI-CIS handoff generation"
+    ],
+    "boundaryNotes": [
+      "Use AI-Trace to expose the pattern first.",
+      "Use AI-CIS when repetition becomes a process problem."
+    ]
+  },
+  "ecosystemAgents": {
+    "currentKnown": [
+      "AI-Trace",
+      "AI-CIS",
+      "AI-Case",
+      "AI-ROI",
+      "AI-Quote",
+      "AI-RMA",
+      "AI-Connect"
+    ],
+    "newestAddition": {
+      "name": "AI-Connect",
+      "status": "PLANNED_UNDER_UMBRELLA",
+      "role": "Communication, routing, notification, permission, meeting-preparation, escalation, handoff, and broadcast layer across the Applied Intelligence ecosystem."
+    },
+    "siblingBoundaryRule": "One ecosystem. Separate agents. Clear roles."
+  },
+  "pwaAndInstall": {
+    "manifest": {
+      "id": "/applied-intelligence-app/",
+      "name": "Applied Intelligence",
+      "shortName": "Applied AI",
+      "startUrl": "/applied-intelligence-app/?source=pwa",
+      "scope": "/applied-intelligence-app/",
+      "display": "standalone",
+      "backgroundColor": "#08111f",
+      "themeColor": "#08111f",
+      "orientation": "any"
+    },
+    "serviceWorker": {
+      "cacheName": "applied-intelligence-v8",
+      "appShellIncludes": [
+        "/applied-intelligence-app/",
+        "/applied-intelligence-app/index.html",
+        "/applied-intelligence-app/manifest.json",
+        "/applied-intelligence-app/install.js",
+        "/applied-intelligence-app/assets/icons/icon-192.png",
+        "/applied-intelligence-app/assets/icons/icon-512.png",
+        "/applied-intelligence-app/assets/icons/apple-touch-icon.png",
+        "/applied-intelligence-app/assets/icons/favicon-32.png",
+        "/applied-intelligence-app/assets/icons/favicon-16.png"
+      ]
+    },
+    "installBehavior": {
+      "beforeInstallPromptHandled": true,
+      "iosInstallHintHandled": true,
+      "standaloneDetectionHandled": true
+    }
+  },
+  "masterRepoMergeTargets": {
+    "sourceFolder": "UNKNOWN",
+    "recommendedReferences": [
+      "shared/source/applied-intelligence.master.json",
+      "shared/source/project-registry.json"
+    ],
+    "recommendedProjectFolder": "UNKNOWN",
+    "recommendedAppSourceRefs": [
+      "index.html",
+      "manifest.json",
+      "sw.js",
+      "install.js",
+      "assets/icons/apple-touch-icon.png",
+      "assets/icons/favicon-16.png",
+      "assets/icons/favicon-32.png",
+      "assets/icons/icon-192.png",
+      "assets/icons/icon-512.png"
+    ],
+    "recommendedNewSourcesForAIConnect": [
+      "sources/ai-connect/overview.md",
+      "sources/ai-connect/purpose.md",
+      "sources/ai-connect/features.md",
+      "sources/ai-connect/roles-and-permissions.md",
+      "sources/ai-connect/notifications.md",
+      "sources/ai-connect/routing.md",
+      "sources/ai-connect/commands.md"
+    ]
+  },
+  "dataAndSourceLinks": {
+    "knownParentLinks": [
+      "shared/source/applied-intelligence.master.json",
+      "shared/source/project-registry.json"
+    ],
+    "knownRepoLinks": [
+      "https://github.com/kool1160/applied-intelligence-app",
+      "https://github.com/kool1160/kool1160-applied-intelligence"
+    ],
+    "knownCurrentSourceFiles": [
+      "index.html",
+      "manifest.json",
+      "sw.js",
+      "install.js"
+    ],
+    "knownSharedReferences": [
+      "AI-Trace",
+      "AI-CIS",
+      "AI-Connect"
+    ]
+  },
+  "syncRules": {
+    "ruleSet": [
+      "The app source should inherit its core ecosystem logic from the master Applied Intelligence source.",
+      "The app should not maintain conflicting agent definitions.",
+      "App-specific UI structure and PWA behavior can be app-specific, but core agent identity should stay aligned with the master source.",
+      "AI-Connect should be treated as umbrella-layer connective infrastructure, not as a replacement for sibling agents."
+    ],
+    "corePrinciple": "The app operates the ecosystem, but the master source defines it."
+  },
+  "openItems": [
+    "Exact master repo folder path for this app is UNKNOWN.",
+    "Exact shared registry schema for master repo is UNKNOWN.",
+    "Exact final JSON schema expected by the other organizing chat is UNKNOWN, so this V2 JSON is a clean build proposal based on current known structure.",
+    "AI-Connect source files are planned but not yet confirmed as created in repo.",
+    "Current app still visually contains some V7 wording or content in UI copy even though the document title was updated to V8.",
+    "Exact fifth bottom-nav screen name is UNKNOWN from currently available snippets.",
+    "Any additional shared source files beyond the master inheritance and project registry are UNKNOWN."
+  ],
+  "preserveOnMerge": [
+    "Preserve inheritance from shared/source/applied-intelligence.master.json.",
+    "Preserve project registry reference to shared/source/project-registry.json.",
+    "Preserve this app as a static web app with index.html as entry point unless intentionally rebuilt.",
+    "Preserve AI-Trace as the current primary in-app working feature set.",
+    "Preserve AI-CIS as a handoff target, not as a merged role inside AI-Trace.",
+    "Preserve AI-Connect as umbrella-layer connective infrastructure, not as a replacement for sibling agents.",
+    "Preserve icon, manifest, and service-worker install structure for GitHub Pages and PWA behavior.",
+    "Preserve sibling-agent boundaries across AI-CIS, AI-Case, AI-ROI, AI-Quote, AI-RMA, AI-Trace, and AI-Connect."
+  ],
+  "evidence": {
+    "masterRepoReference": "GitHub.txt",
+    "appRepoFiles": [
+      "manifest.json",
+      "sw.js",
+      "install.js",
+      "index.html"
+    ],
+    "handoffSupportFilesPresent": true
+  }
 }
