@@ -1,0 +1,85 @@
+{
+  "project": {
+    "name": "Applied Intelligence",
+    "slug": "applied-intelligence",
+    "version": "1.0.0",
+    "type": "ecosystem-master",
+    "slogan": "Standardize to Optimize",
+    "supportingLine": "Applied Intelligence Framework",
+    "description": "Applied Intelligence is the parent ecosystem for specialized manufacturing, quality, reporting, communication, and business-value agents.",
+    "corePrinciple": "One ecosystem. Separate agents. Clear roles."
+  },
+  "ecosystem": {
+    "sharedSourceStrategy": "The website and app should both read from shared source files in this repository so ecosystem definitions remain synchronized.",
+    "connectiveLayer": "AI-Connect",
+    "deliveryLayers": [
+      "website",
+      "mobile-app"
+    ]
+  },
+  "agents": [
+    {
+      "id": "ai-cis",
+      "name": "AI-CIS",
+      "role": "Continuous improvement only",
+      "status": "active",
+      "boundary": "Must not perform ROI, quoting, business case generation, or case study writing.",
+      "principle": "AI-CIS finds the improvement.",
+      "modes": ["Run LIR", "Run LIR-P", "Run LIR-E", "Run Control", "Final"]
+    },
+    {
+      "id": "ai-case",
+      "name": "AI-Case",
+      "role": "Case study and portfolio storytelling",
+      "status": "planned",
+      "boundary": "Must not replace AI-CIS, AI-ROI, or AI-Quote.",
+      "principle": "AI-Case tells the story.",
+      "modes": ["Run Case", "Run Case Summary", "Final"]
+    },
+    {
+      "id": "ai-roi",
+      "name": "AI-ROI",
+      "role": "ROI, payback, and business justification",
+      "status": "active",
+      "boundary": "Must not replace AI-CIS, AI-Case, or AI-Quote.",
+      "principle": "AI-ROI justifies the value.",
+      "modes": ["Run ROI", "Run ROI Case", "Run Business Case", "Run Payback", "Final"]
+    },
+    {
+      "id": "ai-quote",
+      "name": "AI-Quote",
+      "role": "Quoting and estimating",
+      "status": "planned",
+      "boundary": "Must stay focused on estimating logic, labor, flow, and weld / grind decisions.",
+      "principle": "AI-Quote prices the work clearly.",
+      "modes": ["Run Quote", "Run Estimate", "Final"]
+    },
+    {
+      "id": "ai-rma",
+      "name": "AI-RMA",
+      "role": "Return and corrective flow system",
+      "status": "planned",
+      "boundary": "Must stay within return, corrective, and ownership workflows.",
+      "principle": "AI-RMA closes the loop.",
+      "modes": ["Run RMA", "Run Corrective", "Final"]
+    },
+    {
+      "id": "ai-trace",
+      "name": "AI-Trace",
+      "role": "Trace logging, summaries, patterns, escalations, and dashboards",
+      "status": "active",
+      "boundary": "Must not replace AI-CIS, AI-ROI, or corrective action ownership.",
+      "principle": "AI-Trace shows the picture clearly.",
+      "modes": ["Trace Log", "Trace Summary", "Trace Pattern", "Trace Escalation", "Run Dashboard", "Final"]
+    },
+    {
+      "id": "ai-connect",
+      "name": "AI-Connect",
+      "role": "Communication, routing, notifications, permissions, meeting preparation, escalation, handoff, and broadcast layer",
+      "status": "active",
+      "boundary": "Must connect people and work without replacing specialist agents.",
+      "principle": "Nothing important gets lost between people, departments, or decisions.",
+      "modes": ["Run Connect", "Run Connect Route", "Run Connect Notify", "Run Connect Alert", "Run Connect Chat", "Run Connect Permissions", "Run Connect Access", "Run Connect Meeting", "Run Connect Escalation", "Run Connect Handoff", "Run Connect Broadcast", "Run Connect Department View", "Run Connect User View", "Final"]
+    }
+  ]
+}
