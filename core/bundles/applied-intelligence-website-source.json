@@ -1,0 +1,169 @@
+{
+  "projectName": "Applied Intelligence Website",
+  "system": {
+    "name": "Applied Intelligence",
+    "slogan": "Standardize to Optimize",
+    "supportingLine": "Applied Intelligence Framework",
+    "corePrinciple": "One ecosystem. Separate agents. Clear roles."
+  },
+  "repository": {
+    "name": "kool1160-applied-intelligence",
+    "fullName": "kool1160/kool1160-applied-intelligence",
+    "platform": "GitHub",
+    "url": "https://github.com/kool1160/kool1160-applied-intelligence",
+    "branch": "main",
+    "role": "Central source hub for the Applied Intelligence ecosystem",
+    "purpose": "Acts as the master repository and shared source location for ecosystem project folders, agent definitions, website references, app references, schemas, routing models, handoff models, and roadmap data."
+  },
+  "inheritsFrom": "shared/source/applied-intelligence.master.json",
+  "projectRegistry": "shared/source/project-registry.json",
+  "sourceLinks": [
+    "shared/source/applied-intelligence.master.json",
+    "shared/source/project-registry.json",
+    "shared/source/agent-registry.json",
+    "shared/source/ecosystem-overview.json",
+    "shared/source/navigation-map.json",
+    "shared/source/roadmap.json"
+  ],
+  "websiteStructure": {
+    "currentRealPackage": {
+      "version": "V12",
+      "status": "present",
+      "type": "static HTML/CSS/JS",
+      "mobileRefinementPass": true,
+      "packageFolder": "apps/website/",
+      "pages": [
+        "index.html",
+        "framework.html",
+        "ai-connect.html",
+        "ai-trace.html",
+        "agents.html",
+        "about.html",
+        "contact.html"
+      ],
+      "coreFiles": [
+        "style.css",
+        "app.js"
+      ]
+    },
+    "previousRealPackageReference": {
+      "version": "V4",
+      "status": "historical current-real-package baseline from earlier handoff",
+      "note": "V4 was the current real package at the time of the repo-aware website source brief. The website has since continued forward through later passes and the current committed website files are aligned to V12."
+    },
+    "discussedButNotPresent": {
+      "version": "V5",
+      "status": "discussed but not present in original workspace handoff"
+    },
+    "pendingMerge": [
+      {
+        "id": "ai-connect",
+        "name": "AI-Connect",
+        "status": "merged into current website files",
+        "note": "AI-Connect is now a top-tier website page and ecosystem entry."
+      }
+    ]
+  },
+  "ecosystemRole": {
+    "websiteRole": "public-facing framework shell",
+    "presents": [
+      "the parent Applied Intelligence ecosystem",
+      "the relationship between top-tier ecosystem systems",
+      "the premium public-facing framework shell aligned to the app"
+    ],
+    "isNot": [
+      "the full application",
+      "the operating interface",
+      "a dashboard clone"
+    ],
+    "alignmentRule": "The website should stay tied to the master Applied Intelligence source while borrowing the app's visual language without cloning the app screens.",
+    "surfaceModel": {
+      "desktopAndIPad": "flagship framework presentation",
+      "phone": "simplified but still premium version of the same system"
+    }
+  },
+  "websiteEcosystemEntries": [
+    {
+      "id": "ai-trace",
+      "name": "AI-Trace",
+      "tier": "top-tier",
+      "status": "present",
+      "role": "visibility"
+    },
+    {
+      "id": "ai-cis",
+      "name": "AI-CIS",
+      "tier": "top-tier",
+      "status": "represented in framework and agent language",
+      "role": "improvement"
+    },
+    {
+      "id": "ai-connect",
+      "name": "AI-Connect",
+      "tier": "top-tier",
+      "status": "present",
+      "role": "coordination"
+    },
+    {
+      "id": "ai-roi",
+      "name": "AI-ROI",
+      "tier": "top-tier",
+      "status": "represented in framework and agent language",
+      "role": "value"
+    },
+    {
+      "id": "ai-case",
+      "name": "AI-Case",
+      "tier": "top-tier",
+      "status": "represented in framework and agent language",
+      "role": "story"
+    },
+    {
+      "id": "ai-rma",
+      "name": "AI-RMA",
+      "tier": "top-tier",
+      "status": "represented in framework and agent language",
+      "role": "corrective_return_structure"
+    },
+    {
+      "id": "document-formatter",
+      "name": "Document Formatter",
+      "tier": "visible-but-undecided",
+      "status": "not a dedicated current website page in V12",
+      "note": "Formatter remains part of the ecosystem but public visibility is still somewhat undecided."
+    },
+    {
+      "id": "ai-quote",
+      "name": "AI-Quote",
+      "tier": "planned_or_unknown",
+      "status": "UNKNOWN in current website files"
+    }
+  ],
+  "designDirection": {
+    "foundation": "dark navy premium system shell",
+    "chrome": "newer liquid-glass / translucent chrome for top bar and bottom dock",
+    "contentRule": "Glass belongs mostly on navigation and chrome, not every content block.",
+    "bridgeRule": "The app is the operating layer. The website is the framework shell. They should feel like one ecosystem, not one duplicated screen.",
+    "appAlignment": {
+      "flagshipReference": "iPad app experience",
+      "phoneReference": "supporting simplified experience"
+    }
+  },
+  "openItems": [
+    "Continue refining glass/chrome treatment in navigation and dock to match the newer app direction more closely.",
+    "Strengthen lower-page composition where pages still feel light after the main content blocks.",
+    "Keep tightening spacing consistency between hero, cards, and lower modules.",
+    "Tighten support copy where needed so it reads sharper and more premium.",
+    "Document Formatter visibility is still somewhat undecided.",
+    "AI-Quote remains planned/unknown in current website files."
+  ],
+  "syncRules": {
+    "ruleSet": [
+      "The website source should inherit its core ecosystem logic from the master Applied Intelligence source.",
+      "The website should not maintain conflicting agent definitions.",
+      "Public website structure and ecosystem presentation can be website-specific, but core agent identity should stay aligned with the master source.",
+      "AI-Connect should be treated as a first-class ecosystem feature."
+    ],
+    "corePrinciple": "The website presents the ecosystem, but the master source defines it."
+  }
+}
