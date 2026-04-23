@@ -1,0 +1,594 @@
+{
+  "executionSpine": {
+    "name": "Execution Spine",
+    "slug": "execution-spine",
+    "classification": {
+      "layerType": "core_system_layer",
+      "architectureRole": "platform_level_execution_architecture",
+      "standaloneAgent": false
+    },
+    "tagline": "The layer that carries work from signal to closure.",
+    "systemRole": "The controlled execution-carrying layer that sits across the Applied Intelligence ecosystem and ensures important work does not get lost between detection, routing, ownership, action, escalation, and closure.",
+    "corePrinciple": "Nothing important gets lost between people, departments, or decisions.",
+    "purpose": {
+      "summary": "Convert meaningful signals into managed execution.",
+      "job": "Make sure important work moves.",
+      "doesNotExistTo": [
+        "generate insight",
+        "write reports",
+        "act as generic chat",
+        "replace specialized agents"
+      ],
+      "endStates": [
+        "truly closed",
+        "intentionally parked with clear ownership and reason",
+        "escalated into a higher decision path"
+      ],
+      "strategicOutcome": "Turns Applied Intelligence from a collection of smart modules into a true operational system."
+    },
+    "whyItMatters": {
+      "commonSystemStrengths": [
+        "storing information",
+        "displaying information",
+        "messaging about information"
+      ],
+      "commonSystemWeakness": "Very few systems reliably carry work from first signal to verified closure.",
+      "breakdownGap": [
+        "noticing",
+        "documenting",
+        "assigning",
+        "routing",
+        "following up",
+        "escalating",
+        "verifying",
+        "closing"
+      ],
+      "claim": "The Execution Spine owns the gap between detection and closure so the system does not become a passive reporting environment."
+    },
+    "coreDefinition": {
+      "summary": "The universal work-carrying layer for Applied Intelligence.",
+      "signalToObjectRule": "A meaningful issue, request, risk, action, or coordination need enters the system as a signal and is converted into a live execution object.",
+      "result": "Once converted, the item is no longer treated as static information. It becomes managed work.",
+      "signalExamples": [
+        "trace pattern requiring visibility or action",
+        "LIR requiring routing and follow-through",
+        "LIR-P requiring routing and follow-through",
+        "LIR-E requiring routing and follow-through",
+        "equipment downtime",
+        "process failure",
+        "quality concern",
+        "delivery risk",
+        "unresolved handoff",
+        "meeting action item",
+        "return or corrective action item",
+        "quote risk requiring cross-functional review",
+        "ROI candidate requiring approval flow",
+        "blocked department dependency",
+        "overdue response or stalled ownership",
+        "executive-risk escalation"
+      ]
+    },
+    "isNot": [
+      "a separate sibling agent",
+      "a detached ticketing application",
+      "a generic task list",
+      "a standalone chat system",
+      "a replacement for ERP",
+      "a replacement for root cause analysis",
+      "a replacement for continuous improvement logic",
+      "a replacement for quoting",
+      "a replacement for ROI justification",
+      "a replacement for case study storytelling"
+    ],
+    "operatingRule": {
+      "goldenRule": "If it matters enough to track, it matters enough to carry.",
+      "systemShouldNotStopAt": [
+        "notification",
+        "report generation",
+        "discussion",
+        "dashboard visibility",
+        "summary output"
+      ],
+      "systemShouldContinueUntil": [
+        "ownership is clear",
+        "route is clear",
+        "current state is clear",
+        "required next action is clear",
+        "escalation rules are visible",
+        "closure is verified"
+      ]
+    },
+    "executionObjectModel": {
+      "coreObjectName": "Execution Object",
+      "purpose": "The live record that carries meaningful work through the system.",
+      "objectTypes": [
+        "Incident Execution Object",
+        "Equipment Failure Execution Object",
+        "Quality Risk Execution Object",
+        "Routing Failure Execution Object",
+        "Handoff Execution Object",
+        "Meeting Action Execution Object",
+        "Escalation Execution Object",
+        "Return / RMA Execution Object",
+        "Quote Risk Execution Object",
+        "ROI Candidate Execution Object",
+        "Department Coordination Execution Object",
+        "Executive Visibility Execution Object"
+      ],
+      "minimumRequiredFields": {
+        "identity": [
+          "executionId",
+          "title",
+          "objectType",
+          "sourceLayerOrAgent",
+          "createdBy",
+          "createdTime",
+          "lastUpdatedTime"
+        ],
+        "ownership": [
+          "currentOwner",
+          "ownerRole",
+          "owningDepartment",
+          "backupOwner",
+          "visibilityRoles",
+          "watchers"
+        ],
+        "routing": [
+          "currentRouteStage",
+          "previousRouteStages",
+          "nextExpectedRoute",
+          "linkedDepartments",
+          "linkedUsers",
+          "escalationRoute"
+        ],
+        "priorityTiming": [
+          "priorityLevel",
+          "severityLevel",
+          "dueDateOrDueState",
+          "agingClock",
+          "responseExpectation",
+          "overdueStatus"
+        ],
+        "linkedContext": [
+          "linkedTraceEntryOrSummary",
+          "linkedLIR",
+          "linkedLIRP",
+          "linkedLIRE",
+          "linkedRMA",
+          "linkedQuoteRisk",
+          "linkedROICase",
+          "linkedMeetingItem",
+          "linkedThread",
+          "linkedPhotosOrEvidence",
+          "linkedDocuments",
+          "linkedPartFixtureProcessOrderJobData"
+        ],
+        "executionState": [
+          "New",
+          "Routed",
+          "Acknowledged",
+          "Assigned",
+          "In Review",
+          "Waiting on Input",
+          "Waiting on Another Department",
+          "Active",
+          "Escalated",
+          "Pending Verification",
+          "Closed",
+          "Reopened"
+        ],
+        "closure": [
+          "closureSummary",
+          "closureProof",
+          "verifiedBy",
+          "verifiedTime",
+          "reopenTrigger"
+        ]
+      }
+    },
+    "lifecycle": [
+      {
+        "stage": 1,
+        "name": "Signal",
+        "description": "A meaningful issue, request, risk, or action enters the system."
+      },
+      {
+        "stage": 2,
+        "name": "Conversion",
+        "description": "The signal is converted into an Execution Object."
+      },
+      {
+        "stage": 3,
+        "name": "Routing",
+        "description": "The object is routed to the correct owner, department, and visibility group."
+      },
+      {
+        "stage": 4,
+        "name": "Acknowledgment",
+        "description": "Receipt and responsibility are confirmed."
+      },
+      {
+        "stage": 5,
+        "name": "Active Work",
+        "description": "The item is being worked, reviewed, coordinated, or resolved."
+      },
+      {
+        "stage": 6,
+        "name": "Cross-Department Movement",
+        "description": "The same object expands through linked departments when required."
+      },
+      {
+        "stage": 7,
+        "name": "Escalation",
+        "description": "If action stalls, risk increases, or timing fails, escalation rules trigger."
+      },
+      {
+        "stage": 8,
+        "name": "Verification",
+        "description": "Required closure proof or signoff is checked."
+      },
+      {
+        "stage": 9,
+        "name": "Closure",
+        "description": "The object is closed with visible disposition and verification data."
+      },
+      {
+        "stage": 10,
+        "name": "Reopen if Needed",
+        "description": "If closure fails or the problem returns, the object is reopened under controlled rules."
+      }
+    ],
+    "agentRelationshipModel": {
+      "summary": "The Execution Spine does not replace Applied Intelligence agents. It gives them a controlled path into real execution.",
+      "relationships": {
+        "ai-trace": {
+          "role": [
+            "detects patterns",
+            "exposes recurring friction",
+            "identifies signal-worthy issues"
+          ],
+          "spineUse": "Can push execution-worthy items into the spine."
+        },
+        "ai-cis": {
+          "role": [
+            "structures process and equipment issues",
+            "creates formal improvement records"
+          ],
+          "spineUse": "Can push owned follow-through work into the spine."
+        },
+        "ai-rma": {
+          "role": [
+            "manages containment and corrective action flow",
+            "generates failure-based execution objects"
+          ],
+          "spineUse": "Uses the spine for routing, ownership, escalation, and closure visibility."
+        },
+        "ai-roi": {
+          "role": [
+            "justifies value"
+          ],
+          "spineUse": "Can generate approval-path execution candidates when action is required."
+        },
+        "ai-quote": {
+          "role": [
+            "surfaces quoting, fixturing, and production-flow risk"
+          ],
+          "spineUse": "Can push actionable risks into the spine when cross-functional work is required."
+        },
+        "ai-case": {
+          "role": [
+            "tells validated stories after the work is done"
+          ],
+          "spineUse": "Can reference closed spine objects as story sources later."
+        },
+        "ai-connect": {
+          "role": [
+            "acts as the primary visible movement layer",
+            "handles routing",
+            "handles notifications",
+            "handles permissions",
+            "handles handoffs",
+            "handles work-linked chat",
+            "handles meeting prep",
+            "handles escalation visibility"
+          ],
+          "spineUse": "Should be the main user-facing behavior layer through which the Execution Spine is experienced."
+        },
+        "document-formatter": {
+          "role": [
+            "formats outputs linked to spine objects"
+          ],
+          "spineUse": "Does not own execution logic."
+        }
+      },
+      "bestRelationshipStatement": "AI-Connect is the visible movement layer. Execution Spine is the controlled work-carrying layer underneath it."
+    },
+    "corePrinciples": [
+      "Nothing important gets lost.",
+      "Ownership must always be clear.",
+      "Visibility must match responsibility.",
+      "Routing must be controlled.",
+      "Escalation must be rule-based.",
+      "Closure must be provable.",
+      "Context must travel with the work.",
+      "Cross-department work must remain connected.",
+      "Reopen must be possible.",
+      "Simplicity wins."
+    ],
+    "routingAndEscalationLogic": {
+      "supportedLogic": [
+        "department-based routing",
+        "role-based routing",
+        "severity-based routing",
+        "timing-based routing",
+        "overdue routing",
+        "delivery-risk routing",
+        "customer-impact routing",
+        "cross-functional dependency routing",
+        "executive-visibility triggers"
+      ],
+      "examples": [
+        "A welding issue with delivery risk routes to the department owner first, then planning or leadership if overdue.",
+        "An equipment failure routes to the responsible department, support owner, and elevated visibility if downtime exceeds threshold.",
+        "A meeting action item routes to the named owner and reappears before the next meeting if unresolved.",
+        "An RMA-related issue routes to quality, containment owner, and leadership visibility when customer exposure is confirmed."
+      ]
+    },
+    "closureStandard": {
+      "coreRule": "Closure is a controlled state, not a casual opinion.",
+      "closureProofExamples": {
+        "equipmentIssue": "repaired and tested",
+        "processIssue": "routing, instruction, or control updated and verified",
+        "handoff": "receipt confirmed by next owner",
+        "meetingAction": "deliverable completed or formally dispositioned",
+        "qualityConcern": "containment plus verification result",
+        "roiCandidate": "approved, rejected, or deferred with visible owner and reason",
+        "tracePattern": "linked disposition into CIS, RMA, monitoring, or hold status"
+      },
+      "purpose": "Protects the system from fake completion and cosmetic closure."
+    },
+    "reopenLogic": {
+      "supported": true,
+      "triggers": [
+        "same failure returns after closure",
+        "closure proof is missing or invalid",
+        "downstream departments reject the closure",
+        "customer return or external feedback reopens exposure",
+        "trace data shows the same problem recurring",
+        "follow-up review proves no real correction occurred"
+      ],
+      "purpose": "Maintains system trust."
+    },
+    "productImplications": {
+      "summary": "The Execution Spine should shape the structure of the Applied Intelligence app experience.",
+      "approvedAILanes": [
+        "My Work",
+        "Alerts / Notifications",
+        "Handoffs",
+        "Threads / Communication",
+        "Meetings / Prep"
+      ],
+      "laneInterpretation": {
+        "My Work": "execution objects I own",
+        "Alerts / Notifications": "execution objects needing attention",
+        "Handoffs": "execution objects changing owner or department",
+        "Threads / Communication": "communication attached to live execution objects",
+        "Meetings / Prep": "execution objects requiring alignment, prep, or review"
+      },
+      "claim": "These are visible slices of the same underlying execution system, not disconnected features."
+    },
+    "mvpRecommendation": {
+      "recommendedObjectTypes": [
+        "Incident / issue object",
+        "Handoff object",
+        "Meeting action object",
+        "Escalation object"
+      ],
+      "recommendedBehaviors": [
+        "create object from source signal",
+        "assign owner",
+        "set priority",
+        "show route stage",
+        "attach context and evidence",
+        "notify correct users",
+        "support work-linked comments",
+        "escalate when overdue",
+        "require closure note",
+        "support reopened state"
+      ],
+      "recommendedViews": [
+        "My Work",
+        "Alerts",
+        "Handoffs",
+        "Basic object detail",
+        "Meeting prep / unresolved carryover view"
+      ],
+      "recommendedMetrics": [
+        "open count",
+        "overdue count",
+        "aging by department",
+        "closure cycle time",
+        "reopened count",
+        "unresolved handoff count"
+      ]
+    },
+    "phasedBuildDirection": [
+      {
+        "phase": 1,
+        "name": "Ownership and movement",
+        "purpose": "Make work visible, routed, and owned.",
+        "includes": [
+          "execution object base model",
+          "owner assignment",
+          "route stage tracking",
+          "alerting",
+          "handoff visibility",
+          "closure note",
+          "aging clock"
+        ]
+      },
+      {
+        "phase": 2,
+        "name": "Rule-based escalation",
+        "purpose": "Prevent silent stall.",
+        "includes": [
+          "overdue triggers",
+          "blocked-state handling",
+          "escalation routes",
+          "leadership visibility logic",
+          "priority-based expansion rules"
+        ]
+      },
+      {
+        "phase": 3,
+        "name": "Proof-based closure",
+        "purpose": "Make closure trustworthy.",
+        "includes": [
+          "closure requirements by object type",
+          "verification workflow",
+          "reopen logic",
+          "downstream confirmation where needed"
+        ]
+      },
+      {
+        "phase": 4,
+        "name": "Cross-agent integration",
+        "purpose": "Make the ecosystem operate as one system.",
+        "includes": [
+          "Trace-to-Spine conversion",
+          "CIS-to-Spine conversion",
+          "RMA-to-Spine conversion",
+          "ROI candidate routing",
+          "Quote risk routing",
+          "meeting-object generation",
+          "dashboard links back to live objects"
+        ]
+      },
+      {
+        "phase": 5,
+        "name": "Executive operating layer",
+        "purpose": "Turn the spine into an operations command backbone.",
+        "includes": [
+          "department health view",
+          "aging heat maps",
+          "high-risk open objects",
+          "recurring escalation visibility",
+          "unresolved ownership risk",
+          "closure quality metrics"
+        ]
+      }
+    ],
+    "dataModelPhilosophy": {
+      "mustHave": [
+        "consistent statuses",
+        "clear ownership fields",
+        "linked-source structure",
+        "visible event history",
+        "closure metadata",
+        "escalation trace"
+      ],
+      "avoid": [
+        "bloated forms",
+        "overdesigned workflow bureaucracy",
+        "detached records with no routing relationship",
+        "chat messages treated as execution by themselves",
+        "systems that look smart but do not carry work"
+      ],
+      "designGoal": "Fast to create and strong enough to manage real operational follow-through."
+    },
+    "eventHistory": {
+      "required": true,
+      "eventExamples": [
+        "created",
+        "routed",
+        "acknowledged",
+        "owner changed",
+        "priority changed",
+        "escalated",
+        "comment added",
+        "evidence attached",
+        "entered waiting state",
+        "reopened",
+        "verified",
+        "closed"
+      ],
+      "purpose": "Creates operational memory, improves handoffs, and supports accountability without noise."
+    },
+    "permissionsModel": {
+      "throughLayer": "AI-Connect",
+      "keyRule": "Visibility should expand with responsibility, not with noise.",
+      "visibilityLevels": {
+        "Standard User": "own work and directly linked items",
+        "Lead": "team-relevant items",
+        "Supervisor": "department execution objects",
+        "Manager": "multi-department execution and escalations",
+        "Upper Management": "higher-level operational visibility",
+        "President / Executive": "major risk, overdue escalation, and cross-functional exposure"
+      },
+      "editRightsControlledBy": [
+        "ownership",
+        "role",
+        "department",
+        "object type",
+        "route state",
+        "escalation state"
+      ]
+    },
+    "strategicValue": {
+      "summary": "One of the strongest moat-creating concepts inside Applied Intelligence.",
+      "manySystemsCanClaim": [
+        "AI",
+        "dashboards",
+        "forms",
+        "messaging",
+        "reports",
+        "workflows"
+      ],
+      "fewSystemsCanHonestlyClaim": "We carry important work from first signal to verified closure across departments.",
+      "whyHardToReplace": [
+        "trust increases",
+        "follow-through improves",
+        "meetings become sharper",
+        "handoffs become cleaner",
+        "missed items decrease",
+        "accountability becomes natural",
+        "leadership visibility improves",
+        "recurring failure becomes harder to hide"
+      ]
+    },
+    "positioning": {
+      "internalName": "Execution Spine",
+      "plainEnglishDescription": "The operating layer that carries important work through the system until it is truly closed.",
+      "shortBrandLine": "From signal to closure.",
+      "expandedBrandLine": "The Execution Spine carries work from signal to closure so nothing important gets lost, stalled, or forgotten."
+    },
+    "finalSystemStatement": {
+      "summary": "If Applied Intelligence is going to become more than a collection of smart modules, it needs a core layer that guarantees movement, ownership, escalation, and closure.",
+      "thatLayerIs": "Execution Spine",
+      "ecosystemLine": [
+        "AI-Trace sees the signal.",
+        "AI-CIS structures the issue.",
+        "AI-RMA contains the failure.",
+        "AI-ROI justifies the value.",
+        "AI-Case tells the story.",
+        "AI-Connect moves the people.",
+        "Execution Spine carries the work."
+      ],
+      "endState": "Applied Intelligence becomes the system that does not let critical work die in the gap."
+    },
+    "repoPlacementRecommendation": {
+      "masterSourceIntegration": "Add this object at the top level of the Applied Intelligence master source file under the key executionSpine.",
+      "suggestedMasterSourcePath": "core/bundles/applied-intelligence-master-source.json",
+      "derivedBundleExpectation": "App and website source bundles should inherit the relevant executionSpine fields from the master source.",
+      "appUsageAreas": [
+        "AI-Connect module",
+        "object model",
+        "routing rules",
+        "handoff model",
+        "meeting-prep model",
+        "alert logic",
+        "permissions logic"
+      ]
+    }
+  }
+}
