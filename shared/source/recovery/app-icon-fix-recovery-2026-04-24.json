@@ -1,0 +1,59 @@
+{
+  "id": "app-icon-fix-recovery-2026-04-24",
+  "name": "Applied Intelligence App Icon Fix Recovery Handoff",
+  "status": "active_review_branch_blocked_by_asset_quality",
+  "project": "Applied Intelligence App",
+  "runtimeRepo": "kool1160/applied-intelligence-app",
+  "sourceRepo": "kool1160/kool1160-applied-intelligence",
+  "liveApp": "https://app.appliedintelco.com/",
+  "workingBranch": "ticket-011-014-approved-icons-assets",
+  "currentAppTypeForThisIssue": "static-web-app-runtime",
+  "currentGoal": "Fix the wrong or low-quality runtime header icon without redesigning, rebuilding, redeploying, or changing app behavior.",
+  "confirmedFacts": [
+    "Live app loads.",
+    "Netlify is the active deployment platform for the live app.",
+    "Runtime Validation previously passed 21 / 0.",
+    "Review branch exists: ticket-011-014-approved-icons-assets.",
+    "Header icon path on the review branch was pointed to /applied-intelligence-app/assets/brand/applied-intelligence-primary-icon.png?v=20260424-approved-primary.",
+    "Service worker cache was bumped to applied-intelligence-v8-shell-2026-04-24-approved-primary-icon.",
+    "No final merge to main was performed for the review branch.",
+    "No final deploy was performed for the review branch."
+  ],
+  "currentBlocker": "The primary runtime PNG files currently in the review branch are only 32x32 and need replacement with the approved high-quality blue glowing square AI logo PNG.",
+  "filesToReplaceOnly": [
+    "assets/brand/applied-intelligence-primary-icon.png",
+    "applied-intelligence-app/assets/brand/applied-intelligence-primary-icon.png"
+  ],
+  "verificationRequired": [
+    "Both files exist.",
+    "Both files are at least 512x512, preferably 1024x1024.",
+    "Both files are not the old 32x32 version.",
+    "Header path remains /applied-intelligence-app/assets/brand/applied-intelligence-primary-icon.png?v=20260424-approved-primary.",
+    "Service worker cache name remains applied-intelligence-v8-shell-2026-04-24-approved-primary-icon."
+  ],
+  "preserve": [
+    "Navigation",
+    "Runtime Validation",
+    "Header copy",
+    "Routes",
+    "Agent definitions",
+    "Splash behavior",
+    "AI-Connect behavior",
+    "App structure",
+    "Manifest unless specifically directed later"
+  ],
+  "runtimeHeaderDisallowedSources": [
+    "Transparent icon",
+    "Hat icon",
+    "Old circular icon",
+    "Generated SVG approximation",
+    "32x32 PNG",
+    "/assets/icons/icon-512.png"
+  ],
+  "sourcePlacement": {
+    "parentSourceFile": "shared/source/app-source.json",
+    "standaloneSourceFile": "shared/source/recovery/app-icon-fix-recovery-2026-04-24.json",
+    "masterSource": "shared/source/applied-intelligence.master.json",
+    "projectRegistry": "shared/source/project-registry.json"
+  }
+}
