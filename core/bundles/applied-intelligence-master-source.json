@@ -18,8 +18,9 @@
     "AI-ROI": "#4cc9f0",
     "AI-Case": "#9b5de5",
     "AI-RMA": "#ff4d4d"
-},
-"system": {
+  }
+  },
+  "system": {
     "name": "Applied Intelligence",
     "slug": "applied-intelligence",
     "slogan": "Standardize to Optimize",
