@@ -1,0 +1,59 @@
+{
+  "system": {
+    "name": "Applied Intelligence",
+    "slug": "applied-intelligence",
+    "slogan": "Standardize to Optimize",
+    "supportingLine": "Applied Intelligence Framework",
+    "corePrinciple": "One ecosystem. Separate agents. Clear roles.",
+    "version": "2.0",
+    "projectType": "app_source"
+  },
+  "source": {
+    "derivedFrom": "core/bundles/applied-intelligence-master-source.json",
+    "role": "App-readable bundle derived from the master source",
+    "rule": "Do not edit directly. Update the master source, then rebuild this bundle."
+  },
+  "app": {
+    "name": "Applied Intelligence App",
+    "type": "execution_layer",
+    "role": "operating_system",
+    "runtimeRules": [
+      "One runtime",
+      "One shell",
+      "One router",
+      "Native modules only",
+      "AI-Connect must remain a native module inside the main app",
+      "No detached mini-app behavior",
+      "No bridge app behavior"
+    ],
+    "primaryModules": [
+      "AI-Trace",
+      "AI-CIS",
+      "AI-Connect"
+    ]
+  },
+  "agents": [],
+  "commandReference": {},
+  "ui": {
+    "colorMap": {
+      "ai-cis": "copper",
+      "ai-trace": "blue",
+      "ai-case": "indigo",
+      "ai-roi": "green",
+      "ai-quote": "orange",
+      "ai-rma": "red",
+      "ai-connect": "teal",
+      "document-formatter": "silver"
+    },
+    "iconMap": {
+      "ai-cis": "shield",
+      "ai-trace": "magnifier-chart",
+      "ai-case": "document",
+      "ai-roi": "bar-chart",
+      "ai-quote": "calculator",
+      "ai-rma": "alert-rotate",
+      "ai-connect": "network",
+      "document-formatter": "page-wand"
+    }
+  }
+}
