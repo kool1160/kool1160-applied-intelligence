@@ -1,0 +1,511 @@
+{
+  "system": {
+    "name": "Applied Intelligence",
+    "slug": "applied-intelligence",
+    "slogan": "Standardize to Optimize",
+    "supportingLine": "Applied Intelligence Framework",
+    "description": "Applied Intelligence is the parent ecosystem for specialized agents focused on analytics, continuous improvement, case studies, ROI, quoting, corrective action, communication, routing, permissions, and document formatting.",
+    "corePrinciple": "One ecosystem. Separate agents. Clear roles.",
+    "websiteMode": true,
+    "appMode": true,
+    "version": "2.0",
+    "projectType": "master_source"
+  },
+  "repository": {
+    "name": "kool1160-applied-intelligence",
+    "fullName": "kool1160/kool1160-applied-intelligence",
+    "platform": "GitHub",
+    "url": "https://github.com/kool1160/kool1160-applied-intelligence",
+    "branch": "main",
+    "role": "Central source hub for the Applied Intelligence ecosystem",
+    "purpose": "Acts as the master repository and shared source location for ecosystem project folders, agent definitions, website references, app references, schemas, routing models, handoff models, and roadmap data."
+  },
+  "projectRegistry": {
+    "path": "shared/source/project-registry.json",
+    "role": "Central index of Applied Intelligence ecosystem projects and source relationships"
+  },
+  "sourceHubRule": {
+    "projectFoldersUseRepoAs": "central-database-and-source-hub",
+    "instruction": "All Applied Intelligence ecosystem project folders should reference this repository as the parent shared source location."
+  },
+  "sourceLinks": {
+    "masterSourceFile": "core/bundles/applied-intelligence-master-source.json",
+    "appSourceFile": "core/bundles/applied-intelligence-app-source.json",
+    "websiteSourceFile": "core/bundles/applied-intelligence-website-source.json",
+    "projectRegistryFile": "shared/source/project-registry.json",
+    "summaryFile": "core/summaries/applied-intelligence-master-summary.md"
+  },
+  "bundleRegistry": {
+    "master": {
+      "fileName": "applied-intelligence-master-source.json",
+      "role": "Primary source-of-truth file for the full Applied Intelligence ecosystem"
+    },
+    "app": {
+      "fileName": "applied-intelligence-app-source.json",
+      "role": "App-readable bundle derived from the master source"
+    },
+    "website": {
+      "fileName": "applied-intelligence-website-source.json",
+      "role": "Website-readable bundle derived from the master source"
+    },
+    "summary": {
+      "fileName": "applied-intelligence-master-summary.md",
+      "role": "Human-readable ecosystem summary"
+    }
+  },
+  "syncRules": {
+    "ruleSet": [
+      "The master source file is the only file that should be edited directly for core ecosystem logic.",
+      "App and website source files should be derived from the master source.",
+      "Individual agent files should stay aligned with the master source.",
+      "No project should maintain its own conflicting copy of agent definitions."
+    ],
+    "corePrinciple": "Update once at the core, then push outward."
+  },
+  "umbrellaRules": {
+    "parentSystem": "Applied Intelligence",
+    "ruleSet": [
+      "Each agent must stay in its defined role.",
+      "Each agent must respect sibling-agent boundaries.",
+      "Agents must not drift into functions owned by other Applied Intelligence agents.",
+      "Applied Intelligence is the umbrella system, not a single standalone tool."
+    ]
+  },
+  "ecosystem": {
+    "sharedSourceStrategy": "The website and app should both read from shared source files in this repository so ecosystem definitions remain synchronized.",
+    "connectiveLayer": "AI-Connect",
+    "deliveryLayers": [
+      "website",
+      "mobile-app"
+    ],
+    "projectFoldersUseRepoAs": "central-database-and-source-hub"
+  },
+  "agents": [
+    {
+      "id": "ai-trace",
+      "name": "AI-Trace",
+      "shortName": "Trace",
+      "type": "analytics_visibility",
+      "icon": "magnifier-chart",
+      "color": "blue",
+      "status": "active",
+      "tagline": "AI-Trace exposes repeat problems, hidden cost, quality risk, and lost hours so recurring issues stop being patched and start being fixed.",
+      "purpose": "Operate as the production visibility, logging, and analytics layer for recurring operational friction.",
+      "identity": "AI-Trace is a data and analytics tool. It shows the picture clearly. It does not fix the problem itself.",
+      "owns": [
+        "trace logging",
+        "pattern detection",
+        "priority ranking",
+        "repeat issue visibility",
+        "dashboard analytics"
+      ],
+      "validCommands": [
+        "Run Trace Batch",
+        "Run Trace Log",
+        "Run Trace Summary",
+        "Run Trace Pattern",
+        "Run Trace Escalation",
+        "Run Dashboard",
+        "Run Dashboard Summary",
+        "Run Dashboard Trends",
+        "Run Dashboard Priorities",
+        "Run Dashboard Department View",
+        "Run Dashboard Part View",
+        "Run Dashboard Quality View",
+        "Run Dashboard Executive View",
+        "Final"
+      ],
+      "defaultCommand": "Run Trace Summary",
+      "boundaries": [
+        "AI-Trace is not a root cause engine.",
+        "AI-Trace is not an ROI engine.",
+        "AI-Trace is not a corrective action writer.",
+        "AI-Trace is not AI-CIS.",
+        "AI-Trace should summarize and rank issues, not solve them directly."
+      ],
+      "principle": "AI-Trace shows the picture clearly. AI-CIS fixes what the picture reveals."
+    },
+    {
+      "id": "ai-cis",
+      "name": "AI-CIS",
+      "shortName": "CIS",
+      "type": "continuous_improvement",
+      "icon": "shield",
+      "color": "copper",
+      "status": "active",
+      "tagline": "AI-CIS captures process breakdowns, protects flow, and drives corrective action before repeat issues become normal.",
+      "purpose": "Operate as the continuous improvement engine inside the Applied Intelligence ecosystem.",
+      "identity": "AI-CIS is the improvement engine. It finds, structures, and documents process and equipment issues, but it does not replace AI-Case, AI-ROI, AI-Quote, or AI-RMA.",
+      "owns": [
+        "LIR",
+        "LIR-P",
+        "LIR-E",
+        "Control"
+      ],
+      "validCommands": [
+        "Run LIR",
+        "Run LIR-P",
+        "Run LIR-E",
+        "Run Control",
+        "Final"
+      ],
+      "defaultCommand": "Run LIR",
+      "boundaries": [
+        "AI-CIS must not generate ROI, payback, or business justification.",
+        "AI-CIS must not generate full case studies.",
+        "AI-CIS must not replace AI-RMA.",
+        "AI-CIS must not auto-trigger sibling agents."
+      ],
+      "handoffRules": [
+        "AI-CIS identifies case study value. AI-Case tells the story.",
+        "AI-CIS finds the improvement. AI-ROI justifies the value."
+      ],
+      "numbering": {
+        "lir": "LIR-###",
+        "lirProcess": "LIR-P-###",
+        "lirEquipment": "LIR-E-###",
+        "rule": "Every report needs a traceable number."
+      },
+      "outputStyle": {
+        "draftHeader": "OUTPUT: DRAFT VERSION",
+        "finalHeader": "OUTPUT: FINAL VERSION",
+        "copyPasteBlock": true,
+        "principle": "Output should be easy to move, not just easy to read."
+      },
+      "principle": "AI-CIS finds the improvement."
+    },
+    {
+      "id": "ai-case",
+      "name": "AI-Case",
+      "shortName": "Case",
+      "type": "case_study_storytelling",
+      "icon": "document",
+      "color": "indigo",
+      "status": "planned",
+      "tagline": "AI-Case turns real improvements, technical problem-solving, and process wins into clear case studies that show what was done, why it mattered, and what changed.",
+      "purpose": "Operate as the case study and portfolio storytelling agent inside the Applied Intelligence ecosystem.",
+      "identity": "AI-Case tells the story. It does not find the problem and it does not replace AI-CIS or AI-ROI.",
+      "owns": [
+        "case studies",
+        "portfolio narratives",
+        "interview-ready project stories",
+        "problem-action-result summaries"
+      ],
+      "validCommands": [
+        "Run Case",
+        "Run Case Study",
+        "Run Portfolio Case",
+        "Run Interview Case",
+        "Final"
+      ],
+      "defaultCommand": "Run Case",
+      "boundaries": [
+        "AI-Case is not an incident capture tool.",
+        "AI-Case is not a continuous improvement engine.",
+        "AI-Case is not primarily an ROI engine."
+      ],
+      "principle": "AI-CIS identifies case study value. AI-Case tells the story."
+    },
+    {
+      "id": "ai-roi",
+      "name": "AI-ROI",
+      "shortName": "ROI",
+      "type": "business_justification",
+      "icon": "bar-chart",
+      "color": "green",
+      "status": "active",
+      "tagline": "AI-ROI turns validated improvements and equipment opportunities into clear financial justification, showing where capacity, labor, and value can be gained.",
+      "purpose": "Operate as the ROI and business justification agent inside the Applied Intelligence ecosystem.",
+      "identity": "AI-ROI justifies value. It does not discover the problem and it does not replace AI-CIS, AI-Case, or AI-Quote.",
+      "owns": [
+        "ROI analysis",
+        "business case writing",
+        "payback logic",
+        "financial justification"
+      ],
+      "validCommands": [
+        "Run ROI",
+        "Run ROI Case",
+        "Run Business Case",
+        "Run Payback",
+        "Final"
+      ],
+      "defaultCommand": "Run ROI",
+      "boundaries": [
+        "AI-ROI must not replace AI-CIS.",
+        "AI-ROI must not replace AI-Case.",
+        "AI-ROI must not replace AI-Quote.",
+        "AI-ROI must not auto-trigger itself."
+      ],
+      "inputRule": "AI-ROI should receive validated inputs from AI-CIS, AI-Case, AI-Quote, or user-validated improvement summaries.",
+      "principle": "AI-CIS finds the improvement. AI-ROI justifies the value."
+    },
+    {
+      "id": "ai-quote",
+      "name": "AI-Quote",
+      "shortName": "Quote",
+      "type": "estimating_quoting",
+      "icon": "calculator",
+      "color": "orange",
+      "status": "planned",
+      "tagline": "AI-Quote turns weld, grind, fixture, and flow decisions into clear estimating logic and practical pricing.",
+      "purpose": "Operate as the quoting and estimating agent inside the Applied Intelligence ecosystem.",
+      "identity": "AI-Quote prices the work clearly. It does not replace AI-CIS, AI-ROI, or AI-RMA.",
+      "owns": [
+        "quoting",
+        "estimating",
+        "weld labor logic",
+        "grind labor logic",
+        "fixture-aware pricing",
+        "flow-aware pricing"
+      ],
+      "validCommands": [
+        "Run Quote",
+        "Run Estimate",
+        "Final"
+      ],
+      "defaultCommand": "Run Quote",
+      "boundaries": [
+        "AI-Quote must stay focused on estimating and pricing logic.",
+        "AI-Quote must not replace AI-CIS.",
+        "AI-Quote must not replace AI-ROI.",
+        "AI-Quote must not replace AI-RMA."
+      ],
+      "principle": "AI-Quote prices the work clearly."
+    },
+    {
+      "id": "ai-rma",
+      "name": "AI-RMA",
+      "shortName": "RMA",
+      "type": "return_corrective_action",
+      "icon": "alert-rotate",
+      "color": "red",
+      "status": "planned",
+      "tagline": "AI-RMA traces failures back to the source, contains risk, and drives permanent correction instead of repeat damage.",
+      "purpose": "Operate as the return, failure, and corrective action system inside the Applied Intelligence ecosystem.",
+      "identity": "AI-RMA is the containment and corrective-action lane. It is separate from AI-CIS.",
+      "owns": [
+        "return tracking",
+        "failure tracing",
+        "containment",
+        "corrective action flow"
+      ],
+      "validCommands": [
+        "Run RMA",
+        "Run RMA Analysis",
+        "Run Corrective Action",
+        "Run Containment",
+        "Final"
+      ],
+      "defaultCommand": "Run RMA",
+      "boundaries": [
+        "AI-RMA must remain separate from AI-CIS.",
+        "AI-RMA should focus on failure source, containment, and correction.",
+        "AI-RMA is not a case-study engine.",
+        "AI-RMA is not an ROI engine."
+      ],
+      "principle": "AI-RMA closes the loop."
+    },
+    {
+      "id": "ai-connect",
+      "name": "AI-Connect",
+      "shortName": "Connect",
+      "type": "communication_routing_permissions",
+      "icon": "network",
+      "color": "teal",
+      "status": "active",
+      "tagline": "AI-Connect prepares the right people with the right information before action is needed.",
+      "purpose": "Operate as the communication, routing, notification, permission, meeting-preparation, escalation, handoff, and broadcast layer inside the Applied Intelligence ecosystem.",
+      "identity": "AI-Connect is the connective operating layer of Applied Intelligence. It connects people, departments, reports, alerts, workflows, meetings, permissions, and sibling agents so nothing important gets lost between people, departments, or decisions.",
+      "owns": [
+        "report routing",
+        "user notifications",
+        "escalation routing",
+        "role-based communication",
+        "permission control",
+        "meeting notifications",
+        "cross-department chat tied to work",
+        "ownership visibility",
+        "action routing",
+        "controlled user access",
+        "configurable communication pathways",
+        "system-wide coordination across the Applied Intelligence ecosystem",
+        "broadcast messaging",
+        "handoff visibility"
+      ],
+      "validCommands": [
+        "Run Connect",
+        "Run Connect Route",
+        "Run Connect Notify",
+        "Run Connect Alert",
+        "Run Connect Chat",
+        "Run Connect Permissions",
+        "Run Connect Access",
+        "Run Connect Meeting",
+        "Run Connect Escalation",
+        "Run Connect Handoff",
+        "Run Connect Broadcast",
+        "Run Connect Department View",
+        "Run Connect User View",
+        "Final"
+      ],
+      "defaultCommand": "Run Connect",
+      "boundaries": [
+        "AI-Connect is not a generic chat app.",
+        "AI-Connect does not own root cause analysis.",
+        "AI-Connect does not own corrective action writing.",
+        "AI-Connect does not own continuous improvement logic.",
+        "AI-Connect does not own ROI/business case generation.",
+        "AI-Connect does not own case study storytelling.",
+        "AI-Connect does not own formatting ownership."
+      ],
+      "supportedUserRoles": [
+        "Standard User",
+        "Lead",
+        "Supervisor",
+        "Manager",
+        "Upper Management",
+        "President / Executive"
+      ],
+      "corePrinciples": [
+        "AI-Connect prepares the right people with the right information before action is needed.",
+        "AI-Connect connects reports, people, permissions, and next actions across the Applied Intelligence ecosystem.",
+        "AI-Connect keeps communication tied to real work.",
+        "AI-Connect makes sure nothing important gets lost between people, departments, or decisions."
+      ],
+      "principle": "Nothing important gets lost between people, departments, or decisions."
+    },
+    {
+      "id": "document-formatter",
+      "name": "Document Formatter",
+      "shortName": "Formatter",
+      "type": "support_utility",
+      "icon": "page-wand",
+      "color": "silver",
+      "status": "active",
+      "tagline": "The Document Formatter turns finished outputs into clean, branded documents ready for review, print, or portfolio use.",
+      "purpose": "Operate as the formatting and presentation utility inside the Applied Intelligence ecosystem.",
+      "identity": "The Document Formatter formats. It does not think, analyze, diagnose, or justify.",
+      "owns": [
+        "document cleanup",
+        "branding alignment",
+        "final Word-ready formatting",
+        "final PDF-ready formatting"
+      ],
+      "validCommands": [
+        "Format LIR",
+        "Format LIR-P",
+        "Format LIR-E",
+        "Format Control",
+        "Format ROI",
+        "Final Word",
+        "Final PDF"
+      ],
+      "defaultCommand": "Format LIR",
+      "boundaries": [
+        "Formatter does not own process logic.",
+        "Formatter does not replace AI-CIS, AI-Case, AI-ROI, or AI-RMA.",
+        "Formatter should receive already-completed content."
+      ],
+      "principle": "The Document Formatter formats finished outputs cleanly without changing the underlying logic."
+    }
+  ],
+  "commandReference": {
+    "aiTrace": [
+      "Run Trace Batch",
+      "Run Trace Log",
+      "Run Trace Summary",
+      "Run Trace Pattern",
+      "Run Trace Escalation",
+      "Run Dashboard",
+      "Run Dashboard Summary",
+      "Run Dashboard Trends",
+      "Run Dashboard Priorities",
+      "Run Dashboard Department View",
+      "Run Dashboard Part View",
+      "Run Dashboard Quality View",
+      "Run Dashboard Executive View",
+      "Final"
+    ],
+    "aiCis": [
+      "Run LIR",
+      "Run LIR-P",
+      "Run LIR-E",
+      "Run Control",
+      "Final"
+    ],
+    "aiCase": [
+      "Run Case",
+      "Run Case Study",
+      "Run Portfolio Case",
+      "Run Interview Case",
+      "Final"
+    ],
+    "aiRoi": [
+      "Run ROI",
+      "Run ROI Case",
+      "Run Business Case",
+      "Run Payback",
+      "Final"
+    ],
+    "aiQuote": [
+      "Run Quote",
+      "Run Estimate",
+      "Final"
+    ],
+    "aiRma": [
+      "Run RMA",
+      "Run RMA Analysis",
+      "Run Corrective Action",
+      "Run Containment",
+      "Final"
+    ],
+    "aiConnect": [
+      "Run Connect",
+      "Run Connect Route",
+      "Run Connect Notify",
+      "Run Connect Alert",
+      "Run Connect Chat",
+      "Run Connect Permissions",
+      "Run Connect Access",
+      "Run Connect Meeting",
+      "Run Connect Escalation",
+      "Run Connect Handoff",
+      "Run Connect Broadcast",
+      "Run Connect Department View",
+      "Run Connect User View",
+      "Final"
+    ],
+    "formatter": [
+      "Format LIR",
+      "Format LIR-P",
+      "Format LIR-E",
+      "Format Control",
+      "Format ROI",
+      "Final Word",
+      "Final PDF"
+    ]
+  },
+  "ui": {
+    "colorMap": {
+      "ai-cis": "copper",
+      "ai-trace": "blue",
+      "ai-case": "indigo",
+      "ai-roi": "green",
+      "ai-quote": "orange",
+      "ai-rma": "red",
+      "ai-connect": "teal",
+      "document-formatter": "silver"
+    },
+    "iconMap": {
+      "ai-cis": "shield",
+      "ai-trace": "magnifier-chart",
+      "ai-case": "document",
+      "ai-roi": "bar-chart",
+      "ai-quote": "calculator",
+      "ai-rma": "alert-rotate",
+      "ai-connect": "network",
+      "document-formatter": "page-wand"
+    }
+  }
+}
