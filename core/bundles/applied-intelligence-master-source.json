@@ -1,5 +1,25 @@
-{
-  "system": {
+"design": {
+  "theme": "dark",
+  "colors": {
+    "background": "#08111f",
+    "surface": "#0d1b2a",
+    "primary": "#3aa0ff",
+    "glowBlue": "#4cc9f0",
+    "glowGreen": "#00ff9c",
+    "glowOrange": "#ff9f1c",
+    "glowPurple": "#9b5de5",
+    "glowRed": "#ff4d4d"
+  },
+  "agents": {
+    "AI-Connect": "#00ff9c",
+    "AI-Trace": "#3aa0ff",
+    "AI-CIS": "#ff9f1c",
+    "AI-ROI": "#4cc9f0",
+    "AI-Case": "#9b5de5",
+    "AI-RMA": "#ff4d4d"
+}
+},
+"system": {
     "name": "Applied Intelligence",
     "slug": "applied-intelligence",
     "slogan": "Standardize to Optimize",
