@@ -15,10 +15,10 @@
     "role": "Central source hub for the Applied Intelligence ecosystem",
     "purpose": "Acts as the master repository and shared source location for ecosystem project folders, agent definitions, website references, app references, schemas, routing models, handoff models, and roadmap data."
   },
-  "inheritsFrom": "shared/source/applied-intelligence.master.json",
+  "inheritsFrom": "core/bundles/applied-intelligence-master-source.json",
   "projectRegistry": "shared/source/project-registry.json",
   "sourceLinks": [
-    "shared/source/applied-intelligence.master.json",
+    "core/bundles/applied-intelligence-master-source.json",
     "shared/source/project-registry.json",
     "shared/source/agent-registry.json",
     "shared/source/ecosystem-overview.json",
@@ -27,7 +27,7 @@
   ],
   "websiteStructure": {
     "currentRealPackage": {
-      "version": "V12",
+      "version": "V15",
       "status": "present",
       "type": "static HTML/CSS/JS",
       "mobileRefinementPass": true,
@@ -47,22 +47,10 @@
       ]
     },
     "previousRealPackageReference": {
-      "version": "V4",
-      "status": "historical current-real-package baseline from earlier handoff",
-      "note": "V4 was the current real package at the time of the repo-aware website source brief. The website has since continued forward through later passes and the current committed website files are aligned to V12."
-    },
-    "discussedButNotPresent": {
-      "version": "V5",
-      "status": "discussed but not present in original workspace handoff"
-    },
-    "pendingMerge": [
-      {
-        "id": "ai-connect",
-        "name": "AI-Connect",
-        "status": "merged into current website files",
-        "note": "AI-Connect is now a top-tier website page and ecosystem entry."
-      }
-    ]
+      "version": "V12",
+      "status": "historical committed website source baseline",
+      "note": "V12 was listed in the previous website source bundle. The current website package is now V15."
+    }
   },
   "ecosystemRole": {
     "websiteRole": "public-facing framework shell",
@@ -83,61 +71,14 @@
     }
   },
   "websiteEcosystemEntries": [
-    {
-      "id": "ai-trace",
-      "name": "AI-Trace",
-      "tier": "top-tier",
-      "status": "present",
-      "role": "visibility"
-    },
-    {
-      "id": "ai-cis",
-      "name": "AI-CIS",
-      "tier": "top-tier",
-      "status": "represented in framework and agent language",
-      "role": "improvement"
-    },
-    {
-      "id": "ai-connect",
-      "name": "AI-Connect",
-      "tier": "top-tier",
-      "status": "present",
-      "role": "coordination"
-    },
-    {
-      "id": "ai-roi",
-      "name": "AI-ROI",
-      "tier": "top-tier",
-      "status": "represented in framework and agent language",
-      "role": "value"
-    },
-    {
-      "id": "ai-case",
-      "name": "AI-Case",
-      "tier": "top-tier",
-      "status": "represented in framework and agent language",
-      "role": "story"
-    },
-    {
-      "id": "ai-rma",
-      "name": "AI-RMA",
-      "tier": "top-tier",
-      "status": "represented in framework and agent language",
-      "role": "corrective_return_structure"
-    },
-    {
-      "id": "document-formatter",
-      "name": "Document Formatter",
-      "tier": "visible-but-undecided",
-      "status": "not a dedicated current website page in V12",
-      "note": "Formatter remains part of the ecosystem but public visibility is still somewhat undecided."
-    },
-    {
-      "id": "ai-quote",
-      "name": "AI-Quote",
-      "tier": "planned_or_unknown",
-      "status": "UNKNOWN in current website files"
-    }
+    { "id": "ai-trace", "name": "AI-Trace", "tier": "top-tier", "status": "present", "role": "visibility" },
+    { "id": "ai-cis", "name": "AI-CIS", "tier": "top-tier", "status": "represented in framework and agent language", "role": "improvement" },
+    { "id": "ai-connect", "name": "AI-Connect", "tier": "top-tier", "status": "present", "role": "coordination" },
+    { "id": "ai-roi", "name": "AI-ROI", "tier": "top-tier", "status": "represented in framework and agent language", "role": "value" },
+    { "id": "ai-case", "name": "AI-Case", "tier": "top-tier", "status": "represented in framework and agent language", "role": "story" },
+    { "id": "ai-rma", "name": "AI-RMA", "tier": "top-tier", "status": "represented in framework and agent language", "role": "corrective_return_structure" },
+    { "id": "document-formatter", "name": "Document Formatter", "tier": "visible-but-undecided", "status": "not a dedicated current website page in V15", "note": "Formatter remains part of the ecosystem but public visibility is still somewhat undecided." },
+    { "id": "ai-quote", "name": "AI-Quote", "tier": "planned_or_unknown", "status": "UNKNOWN in current website files" }
   ],
   "designDirection": {
     "foundation": "dark navy premium system shell",
