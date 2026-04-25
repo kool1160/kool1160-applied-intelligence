@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "build:sources": "node core/scripts/build-sources.js"
+  }
+}
