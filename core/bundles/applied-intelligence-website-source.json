@@ -4,107 +4,130 @@
     "name": "Applied Intelligence",
     "slogan": "Standardize to Optimize",
     "supportingLine": "Applied Intelligence Framework",
-    "corePrinciple": "One ecosystem. Separate agents. Clear roles."
+    "corePrinciple": "One ecosystem. Separate agents. Clear roles.",
+    "description": "Applied Intelligence is the parent ecosystem for specialized agents focused on analytics, continuous improvement, case studies, ROI, quoting, corrective action, communication, routing, permissions, and document formatting.",
+    "version": "2.0",
+    "projectType": "website_source"
   },
-  "repository": {
-    "name": "kool1160-applied-intelligence",
-    "fullName": "kool1160/kool1160-applied-intelligence",
-    "platform": "GitHub",
-    "url": "https://github.com/kool1160/kool1160-applied-intelligence",
-    "branch": "main",
-    "role": "Central source hub for the Applied Intelligence ecosystem",
-    "purpose": "Acts as the master repository and shared source location for ecosystem project folders, agent definitions, website references, app references, schemas, routing models, handoff models, and roadmap data."
+  "source": {
+    "derivedFrom": "core/bundles/applied-intelligence-master-source.json",
+    "role": "Website-readable bundle derived from the master source",
+    "rule": "Do not edit directly. Update the master source, then rebuild this bundle."
   },
-  "inheritsFrom": "core/bundles/applied-intelligence-master-source.json",
-  "projectRegistry": "shared/source/project-registry.json",
-  "sourceLinks": [
-    "core/bundles/applied-intelligence-master-source.json",
-    "shared/source/project-registry.json",
-    "shared/source/agent-registry.json",
-    "shared/source/ecosystem-overview.json",
-    "shared/source/navigation-map.json",
-    "shared/source/roadmap.json"
-  ],
-  "websiteStructure": {
-    "currentRealPackage": {
-      "version": "V15",
-      "status": "present",
-      "type": "static HTML/CSS/JS",
-      "mobileRefinementPass": true,
-      "packageFolder": "apps/website/",
-      "pages": [
-        "index.html",
-        "framework.html",
-        "ai-connect.html",
-        "ai-trace.html",
-        "agents.html",
-        "about.html",
-        "contact.html"
-      ],
-      "coreFiles": [
-        "style.css",
-        "app.js"
-      ]
+  "website": {
+    "name": "Applied Intelligence Website",
+    "type": "presentation_layer",
+    "role": "framework-shell",
+    "currentVersion": "V15",
+    "rules": [
+      "Website reads from source",
+      "Website does not execute agents",
+      "Website does not mutate system data",
+      "Website does not redefine core logic"
+    ]
+  },
+  "agents": [
+    {
+      "id": "ai-trace",
+      "name": "AI-Trace",
+      "shortName": "Trace",
+      "tagline": "AI-Trace exposes repeat problems, hidden cost, quality risk, and lost hours so recurring issues stop being patched and start being fixed.",
+      "icon": "magnifier-chart",
+      "color": "blue",
+      "status": "active",
+      "principle": "AI-Trace shows the picture clearly. AI-CIS fixes what the picture reveals."
     },
-    "previousRealPackageReference": {
-      "version": "V12",
-      "status": "historical committed website source baseline",
-      "note": "V12 was listed in the previous website source bundle. The current website package is now V15."
+    {
+      "id": "ai-cis",
+      "name": "AI-CIS",
+      "shortName": "CIS",
+      "tagline": "AI-CIS captures process breakdowns, protects flow, and drives corrective action before repeat issues become normal.",
+      "icon": "shield",
+      "color": "copper",
+      "status": "active",
+      "principle": "AI-CIS finds the improvement."
+    },
+    {
+      "id": "ai-case",
+      "name": "AI-Case",
+      "shortName": "Case",
+      "tagline": "AI-Case turns real improvements, technical problem-solving, and process wins into clear case studies that show what was done, why it mattered, and what changed.",
+      "icon": "document",
+      "color": "indigo",
+      "status": "planned",
+      "principle": "AI-CIS identifies case study value. AI-Case tells the story."
+    },
+    {
+      "id": "ai-roi",
+      "name": "AI-ROI",
+      "shortName": "ROI",
+      "tagline": "AI-ROI turns validated improvements and equipment opportunities into clear financial justification, showing where capacity, labor, and value can be gained.",
+      "icon": "bar-chart",
+      "color": "green",
+      "status": "active",
+      "principle": "AI-CIS finds the improvement. AI-ROI justifies the value."
+    },
+    {
+      "id": "ai-quote",
+      "name": "AI-Quote",
+      "shortName": "Quote",
+      "tagline": "AI-Quote turns weld, grind, fixture, and flow decisions into clear estimating logic and practical pricing.",
+      "icon": "calculator",
+      "color": "orange",
+      "status": "planned",
+      "principle": "AI-Quote prices the work clearly."
+    },
+    {
+      "id": "ai-rma",
+      "name": "AI-RMA",
+      "shortName": "RMA",
+      "tagline": "AI-RMA traces failures back to the source, contains risk, and drives permanent correction instead of repeat damage.",
+      "icon": "alert-rotate",
+      "color": "red",
+      "status": "planned",
+      "principle": "AI-RMA closes the loop."
+    },
+    {
+      "id": "ai-connect",
+      "name": "AI-Connect",
+      "shortName": "Connect",
+      "tagline": "AI-Connect prepares the right people with the right information before action is needed.",
+      "icon": "network",
+      "color": "teal",
+      "status": "active",
+      "principle": "Nothing important gets lost between people, departments, or decisions."
+    },
+    {
+      "id": "document-formatter",
+      "name": "Document Formatter",
+      "shortName": "Formatter",
+      "tagline": "The Document Formatter turns finished outputs into clean, branded documents ready for review, print, or portfolio use.",
+      "icon": "page-wand",
+      "color": "silver",
+      "status": "active",
+      "principle": "The Document Formatter formats finished outputs cleanly without changing the underlying logic."
     }
-  },
-  "ecosystemRole": {
-    "websiteRole": "public-facing framework shell",
-    "presents": [
-      "the parent Applied Intelligence ecosystem",
-      "the relationship between top-tier ecosystem systems",
-      "the premium public-facing framework shell aligned to the app"
-    ],
-    "isNot": [
-      "the full application",
-      "the operating interface",
-      "a dashboard clone"
-    ],
-    "alignmentRule": "The website should stay tied to the master Applied Intelligence source while borrowing the app's visual language without cloning the app screens.",
-    "surfaceModel": {
-      "desktopAndIPad": "flagship framework presentation",
-      "phone": "simplified but still premium version of the same system"
-    }
-  },
-  "websiteEcosystemEntries": [
-    { "id": "ai-trace", "name": "AI-Trace", "tier": "top-tier", "status": "present", "role": "visibility" },
-    { "id": "ai-cis", "name": "AI-CIS", "tier": "top-tier", "status": "represented in framework and agent language", "role": "improvement" },
-    { "id": "ai-connect", "name": "AI-Connect", "tier": "top-tier", "status": "present", "role": "coordination" },
-    { "id": "ai-roi", "name": "AI-ROI", "tier": "top-tier", "status": "represented in framework and agent language", "role": "value" },
-    { "id": "ai-case", "name": "AI-Case", "tier": "top-tier", "status": "represented in framework and agent language", "role": "story" },
-    { "id": "ai-rma", "name": "AI-RMA", "tier": "top-tier", "status": "represented in framework and agent language", "role": "corrective_return_structure" },
-    { "id": "document-formatter", "name": "Document Formatter", "tier": "visible-but-undecided", "status": "not a dedicated current website page in V15", "note": "Formatter remains part of the ecosystem but public visibility is still somewhat undecided." },
-    { "id": "ai-quote", "name": "AI-Quote", "tier": "planned_or_unknown", "status": "UNKNOWN in current website files" }
   ],
-  "designDirection": {
-    "foundation": "dark navy premium system shell",
-    "chrome": "newer liquid-glass / translucent chrome for top bar and bottom dock",
-    "contentRule": "Glass belongs mostly on navigation and chrome, not every content block.",
-    "bridgeRule": "The app is the operating layer. The website is the framework shell. They should feel like one ecosystem, not one duplicated screen.",
-    "appAlignment": {
-      "flagshipReference": "iPad app experience",
-      "phoneReference": "supporting simplified experience"
+  "ui": {
+    "colorMap": {
+      "ai-cis": "copper",
+      "ai-trace": "blue",
+      "ai-case": "indigo",
+      "ai-roi": "green",
+      "ai-quote": "orange",
+      "ai-rma": "red",
+      "ai-connect": "teal",
+      "document-formatter": "silver"
+    },
+    "iconMap": {
+      "ai-cis": "shield",
+      "ai-trace": "magnifier-chart",
+      "ai-case": "document",
+      "ai-roi": "bar-chart",
+      "ai-quote": "calculator",
+      "ai-rma": "alert-rotate",
+      "ai-connect": "network",
+      "document-formatter": "page-wand"
     }
-  },
-  "openItems": [
-    "Continue refining glass/chrome treatment in navigation and dock to match the newer app direction more closely.",
-    "Strengthen lower-page composition where pages still feel light after the main content blocks.",
-    "Keep tightening spacing consistency between hero, cards, and lower modules.",
-    "Tighten support copy where needed so it reads sharper and more premium.",
-    "Document Formatter visibility is still somewhat undecided.",
-    "AI-Quote remains planned/unknown in current website files."
-  ],
-  "syncRules": {
-    "ruleSet": [
-      "The website source should inherit its core ecosystem logic from the master Applied Intelligence source.",
-      "The website should not maintain conflicting agent definitions.",
-      "Public website structure and ecosystem presentation can be website-specific, but core agent identity should stay aligned with the master source.",
-      "AI-Connect should be treated as a first-class ecosystem feature."
-    ],
-    "corePrinciple": "The website presents the ecosystem, but the master source defines it."
   }
 }
