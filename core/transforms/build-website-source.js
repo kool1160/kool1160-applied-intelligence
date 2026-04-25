@@ -8,6 +8,7 @@ const websitePath = path.join(rootDir, "core/bundles/applied-intelligence-websit
 const master = JSON.parse(fs.readFileSync(masterPath, "utf8"));
 
 const websiteSource = {
+  design: master.design,
   projectName: "Applied Intelligence Website",
   system: {
     name: master.system.name,
