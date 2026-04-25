@@ -1,43 +1,122 @@
 {
-  "registry": {
-    "name": "Applied Intelligence Project Registry",
-    "version": "1.0.0",
-    "purpose": "Central index of Applied Intelligence ecosystem projects, shared references, and source relationships.",
-    "repository": "kool1160/kool1160-applied-intelligence"
+  "system": {
+    "name": "Applied Intelligence",
+    "version": "2.0",
+    "principle": "Standardize to Optimize",
+    "architecture": "multi-layer-system"
   },
-  "projects": [
+  "layers": [
     {
-      "id": "applied-intelligence-master",
-      "name": "Applied Intelligence",
-      "type": "ecosystem-master",
-      "status": "active",
-      "version": "1.0.0",
+      "id": "core",
+      "name": "Applied Intelligence Core",
+      "type": "source_of_truth",
+      "role": "master-system-definition",
       "repo": "kool1160/kool1160-applied-intelligence",
-      "sourceFile": "shared/source/applied-intelligence.master.json",
-      "role": "Parent ecosystem and central source hub",
-      "notes": "Acts as the master database/reference point for agents, schemas, routing, roadmap, website references, and app references."
+      "owns": [
+        "agent definitions",
+        "ecosystem rules",
+        "system identity",
+        "master source bundles"
+      ],
+      "files": [
+        "core/bundles/applied-intelligence-master-source.json",
+        "core/bundles/applied-intelligence-app-source.json",
+        "core/bundles/applied-intelligence-website-source.json",
+        "shared/source/project-registry.json"
+      ],
+      "rules": [
+        "All core logic must originate here",
+        "No downstream layer may redefine agent identity",
+        "Update once at the core, then push outward"
+      ]
     },
     {
-      "id": "applied-intelligence-website",
-      "name": "Applied Intelligence Website",
-      "type": "website-project",
-      "status": "active",
-      "version": "v5-reference",
-      "repo": "kool1160/kool1160-applied-intelligence",
-      "sourceFile": "shared/source/website-source.json",
-      "role": "Website delivery layer for ecosystem presentation and storytelling",
-      "notes": "Should reference the master source file and project registry so the site stays tied to the ecosystem source of truth."
-    },
-    {
-      "id": "applied-intelligence-app",
+      "id": "app",
       "name": "Applied Intelligence App",
-      "type": "app-project",
-      "status": "active",
-      "version": "1.0.0-shell",
-      "repo": "kool1160/kool1160-applied-intelligence",
-      "sourceFile": "shared/source/app-source.json",
-      "role": "App delivery layer for connected workflows, dashboards, reports, and AI-Connect functions",
-      "notes": "Should reference the master source file and project registry so the app stays tied to the ecosystem source of truth."
+      "type": "execution_layer",
+      "role": "operating_system",
+      "repo": "kool1160/applied-intelligence-app",
+      "readsFrom": [
+        "core/bundles/applied-intelligence-app-source.json"
+      ],
+      "owns": [
+        "UI",
+        "runtime behavior",
+        "PWA configuration",
+        "navigation",
+        "AI-Connect execution",
+        "AI-Trace interface"
+      ],
+      "constraints": [
+        "must not redefine agent roles",
+        "must not override core system logic",
+        "must remain one runtime, one shell, one router",
+        "no detached mini-app behavior",
+        "AI-Connect must remain native"
+      ],
+      "currentState": {
+        "type": "static-web-app",
+        "entry": "index.html",
+        "pwa": true,
+        "deployment": "GitHub Pages / static"
+      }
+    },
+    {
+      "id": "website",
+      "name": "Applied Intelligence Website",
+      "type": "presentation_layer",
+      "role": "framework-shell",
+      "repo": "applied-intelligence-website",
+      "readsFrom": [
+        "core/bundles/applied-intelligence-website-source.json"
+      ],
+      "owns": [
+        "system presentation",
+        "framework explanation",
+        "agent visualization",
+        "marketing pages"
+      ],
+      "constraints": [
+        "read-only",
+        "no execution logic",
+        "no agent runtime",
+        "no mutation of system data"
+      ]
+    },
+    {
+      "id": "agents",
+      "name": "Applied Intelligence Agents",
+      "type": "logical_layer",
+      "role": "system-components",
+      "readsFrom": [
+        "core/bundles/applied-intelligence-master-source.json"
+      ],
+      "agents": [
+        "AI-Trace",
+        "AI-CIS",
+        "AI-Case",
+        "AI-ROI",
+        "AI-Quote",
+        "AI-RMA",
+        "AI-Connect",
+        "Document Formatter"
+      ],
+      "rules": [
+        "Each agent must stay in its role",
+        "Agents must not overlap responsibilities",
+        "Agents must respect sibling boundaries"
+      ]
     }
+  ],
+  "dataFlow": {
+    "direction": "core -> app / website / agents",
+    "rule": "No reverse flow of authority"
+  },
+  "systemRules": [
+    "One ecosystem. Separate agents. Clear roles.",
+    "Update once at the core, then push outward.",
+    "Execution belongs in the app.",
+    "Presentation belongs in the website.",
+    "Truth belongs in the core."
   ]
 }
