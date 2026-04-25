@@ -8,6 +8,7 @@ const appPath = path.join(rootDir, "core/bundles/applied-intelligence-app-source
 const master = JSON.parse(fs.readFileSync(masterPath, "utf8"));
 
 const appSource = {
+  design: master.design,
   system: {
     name: master.system.name,
     slug: master.system.slug,
