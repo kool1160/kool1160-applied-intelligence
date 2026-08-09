@@ -62,6 +62,12 @@ applied-intelligence/
 
 The `shared/source/` directory is intended to hold the master ecosystem definitions used by both the website and app projects.
 
+## Related repository family
+
+Applied Intelligence spans multiple repositories with different roles and generations. See [`docs/REPOSITORY_FAMILY.md`](docs/REPOSITORY_FAMILY.md) before treating an older repository as obsolete or unrelated.
+
+The family map identifies the master source hub, active application, public website, AI-WOC prototype/successor lineage, AI-CAS flagship role, and the history-preservation rule for the ecosystem.
+
 ## Current Status
 
 This repository has been initialized as the master Applied Intelligence project shell and is ready for the next build phase.
